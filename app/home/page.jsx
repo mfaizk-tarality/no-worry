@@ -7,7 +7,6 @@ import Section3 from "@/common-component/home/Section3";
 import Section4 from "@/common-component/home/Section4";
 import Section5 from "@/common-component/home/Section5";
 import Section6 from "@/common-component/home/Section6";
-
 const HomePage = () => {
   return (
     <div>

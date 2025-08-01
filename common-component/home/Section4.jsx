@@ -7,9 +7,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useTheme } from "next-themes";
 import React, { useMemo, useRef } from "react";
-
 gsap.registerPlugin(useGSAP, ScrollTrigger);
-
 const Section4 = () => {
   const boxRef = useRef();
   const buttonRef = useRef();

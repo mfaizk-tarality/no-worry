@@ -71,7 +71,13 @@ const HeroSection = () => {
   }, [yAxisvalue]);
 
   return (
-    <div className="bg-gradient-to-r from-white to-customPurple/50 w-full flex justify-center flex-col">
+    <div
+      className=" w-full flex justify-center flex-col"
+      // style={{
+      //   backgroundImage:
+      //     "linear-gradient(to right bottom, #e1f6f4, #e6f7fa, #edf9fd, #f4faff, #fafcff, #fafbff, #fafaff, #fbf9ff, #f9f4fe, #f9effc, #faeaf9, #fff);",
+      // }}
+    >
       <div className="h-full w-full flex flex-col justify-center items-center py-20 gap-4">
         <h1 className="text-xl md:text-7xl font-bold w-full md:w-[80%] text-center text-brand">
           India का Smartest Crypto Trading App
@@ -79,8 +85,11 @@ const HeroSection = () => {
         <p className="text-sub-text text-center text-xl font-semibold">
           Launch Bonus: Get ₹250 worth of Bitcoin FREE
         </p>
+        <button className="bg-customPurple text-white px-4 py-2 rounded-sm cursor-pointer">
+          Download noworry
+        </button>
       </div>
-      <div className="relative  w-full">
+      <div className="relative  w-full ">
         <div
           className="w-full flex items-center justify-start  flex-col gap-4 overflow-hidden  min-h-[80vh]"
           ref={boxRef}
@@ -115,7 +124,7 @@ export default HeroSection;
 
 const RightBox = () => {
   return (
-    <div className="w-fit  flex flex-col text-center gap-2 items-center justify-center">
+    <div className="w-fit  flex flex-col text-center gap-2 items-center justify-center ">
       <p className="text-4xl text-sub-text font-semibold">
         Downloaded by more than
       </p>
