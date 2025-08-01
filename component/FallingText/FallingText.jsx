@@ -1,6 +1,8 @@
 "use client";
 import { useRef, useState, useEffect } from "react";
 import Matter from "matter-js";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const FallingText = ({
   text = "",
@@ -17,6 +19,21 @@ const FallingText = ({
   const canvasContainerRef = useRef(null);
 
   const [effectStarted, setEffectStarted] = useState(false);
+
+  useGSAP(() => {
+    gsap.to(containerRef?.current, {
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: "200px 50%",
+        end: "100px 100px",
+        // markers: true,
+        scrub: 0.5,
+        onEnter: () => {
+          setEffectStarted(true);
+        },
+      },
+    });
+  }, []);
 
   useEffect(() => {
     if (!textRef.current) return;

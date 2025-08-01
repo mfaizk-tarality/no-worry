@@ -4,13 +4,14 @@ const FallingTextComponent = () => {
   return (
     <div className="h-[600px] container mx-auto">
       <FallingText
-        text={`Stable Trusted Assured Smooth Effortless Certain Secure Instant Reliable Unshaken Deposit Withdraw Transfer Instant Swift Blink Earn 0Fee`}
+        text={`Stable Trusted Assured Bitcoin Unshaken Secure Instant Effortless Deposit USDT Reliable Smooth  Withdraw Transfer Instant Swift Blink Etherium`}
         highlightWords={[
-          "Trusted",
+          "Smooth",
           "Deposit",
           "Effortless",
           "Withdraw",
-          "Reliable",
+          "Bitcoin",
+          "Etherium",
         ]}
         highlightClass="highlighted"
         trigger="hover"
