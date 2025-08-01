@@ -12,13 +12,14 @@ const Section2 = () => {
                 "col-span-12 md:col-span-6 flex items-center justify-center flex-col bg-white border border-gray-600/10 rounded-2xl group cursor-pointer h-full py-10 md:py-0",
                 item?.row
               )}
+              key={idx}
             >
               <div
                 className={clsx(" flex items-center justify-center flex-col ")}
               >
                 <div className="flex items-center justify-center flex-col mb-20 gap-2 group-hover:scale-105  transition-all delay-200 duration-200 ease-linear">
                   <h2 className="text-6xl font-bold">{item?.title}</h2>
-                  <p className="text-gray-500">{item?.subtitle}</p>
+                  <p className="text-gray-500 text-center">{item?.subtitle}</p>
                 </div>
                 <img
                   src={item?.img}

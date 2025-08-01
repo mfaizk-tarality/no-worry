@@ -1,36 +1,105 @@
 "use client";
+import { createAnimation } from "@/components/ui/theme-animations";
+import ThemeToggleButton from "@/components/ui/theme-toggle-button";
 import { useBreakpoint } from "@/hooks/useBreakpoint";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { useTheme } from "next-themes";
 import React, { useMemo, useRef } from "react";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Section4 = () => {
   const boxRef = useRef();
+  const buttonRef = useRef();
   const imageRef = useRef();
+  const parentRef = useRef();
   const { sm, lg, md, xl } = useBreakpoint();
+  const { theme, setTheme } = useTheme();
+
+  const variant = "circle-blur";
+  const start = "center-top";
+
+  const styleId = "theme-transition-styles";
+
+  const updateStyles = React.useCallback((css, name) => {
+    if (typeof window === "undefined") return;
+
+    let styleElement = document.getElementById(styleId);
+
+    if (!styleElement) {
+      styleElement = document.createElement("style");
+      styleElement.id = styleId;
+      document.head.appendChild(styleElement);
+    }
+
+    styleElement.textContent = css;
+
+    console.log("content updated");
+  }, []);
+
+  const toggleTheme = React.useCallback(
+    (themeValue) => {
+      const animation = createAnimation(variant, start);
+
+      updateStyles(animation.css, animation.name);
+
+      if (typeof window === "undefined") return;
+
+      const switchTheme = () => {
+        setTheme(themeValue);
+      };
+
+      if (!document.startViewTransition) {
+        switchTheme();
+        return;
+      }
+
+      document.startViewTransition(switchTheme);
+    },
+    [theme, setTheme]
+  );
+
   const scalevalue = useMemo(() => {
     return sm ? 1.2 : 1.6;
   }, [sm, lg, md, xl]);
-  console.log(scalevalue, sm, "asdads");
 
   useGSAP(() => {
     gsap.to(imageRef?.current, {
       scrollTrigger: {
         trigger: boxRef.current,
-        markers: true,
+        // markers: true,
         start: "200px 50%",
         end: "400px 100px",
         scrub: 0.5,
       },
+
       y: -400,
       scale: scalevalue,
     });
-  }, [sm]);
+  }, [scalevalue]);
+
+  useGSAP(() => {
+    gsap.to(imageRef?.current, {
+      scrollTrigger: {
+        trigger: parentRef.current,
+        // markers: true,
+        start: "top",
+        end: "top",
+        scrub: 0.5,
+        onEnter: () => {
+          toggleTheme("dark");
+        },
+        onLeaveBack: () => {
+          toggleTheme("light");
+        },
+      },
+    });
+  }, []);
+
   return (
-    <div className="bg-black overflow-hidden">
+    <div className="overflow-hidden" ref={parentRef}>
       <div
         className="w-full flex justify-center items-center container mx-auto mt-52 min-h-screen lg:min-h-[140vh] relative"
         ref={boxRef}
