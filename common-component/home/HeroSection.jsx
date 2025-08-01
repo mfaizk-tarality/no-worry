@@ -150,7 +150,7 @@ const RightBox = () => {
         <div className="flex ring ring-gray-500/60  active:ring-customPurple active:bg-customPurple  active:text-white  hover:ring-customPurple hover:bg-customPurple hover:text-white w-64 justify-center p-2 px-4 rounded-4xl items-center transition-all delay-100 duration-100 ease-linear ">
           <p>Limited to first 29,999 users</p>
         </div>
-        <div className="flex ring ring-gray-500/60  hover:ring-customPurple hover:bg-customPurple hover:text-white w-64 justify-center p-2 px-4 rounded-4xl items-center transition-all delay-100 duration-100 ease-linear ">
+        <div className="flex ring ring-gray-500/60 active:ring-customPurple active:bg-customPurple  hover:ring-customPurple hover:bg-customPurple hover:text-white w-64 justify-center p-2 px-4 rounded-4xl items-center transition-all delay-100 duration-100 ease-linear ">
           <p>27,152 spots remaining</p>
         </div>
       </div>
