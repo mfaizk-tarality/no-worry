@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/all";
 import { Star } from "lucide-react";
 import { useTheme } from "next-themes";
 import React, { useEffect, useMemo, useRef } from "react";
+import WrapButton from "@/components/ui/wrap-button";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const HeroSection = () => {
@@ -85,9 +86,16 @@ const HeroSection = () => {
         <p className="text-sub-text text-center text-xl font-semibold">
           Launch Bonus: Get ₹250 worth of Bitcoin FREE
         </p>
-        <button className="bg-customPurple text-white px-4 py-2 rounded-sm cursor-pointer">
-          Download noworry
-        </button>
+        <div className="w-full flex items-center justify-center">
+          <WrapButton className="mt-10" href="/docs/components/card-carousel">
+            <img
+              src="/assets/playstore.svg"
+              alt=""
+              className=" object-contain  h-6"
+            />
+            Get started
+          </WrapButton>
+        </div>
       </div>
       <div className="relative  w-full ">
         <div
