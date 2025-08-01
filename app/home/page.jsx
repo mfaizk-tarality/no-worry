@@ -7,11 +7,13 @@ import Section3 from "@/common-component/home/Section3";
 import Section4 from "@/common-component/home/Section4";
 import Section5 from "@/common-component/home/Section5";
 import Section6 from "@/common-component/home/Section6";
+import FallingTextComponent from "@/common-component/home/FallingText";
 const HomePage = () => {
   return (
     <div>
       <HeroSection />
       {/* <Section1 /> */}
+      <FallingTextComponent />
       <Section2 />
       <Section3 />
       <Section4 />

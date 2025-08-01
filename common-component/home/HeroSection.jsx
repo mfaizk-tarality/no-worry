@@ -8,6 +8,7 @@ import { ExternalLink, Star } from "lucide-react";
 import { useTheme } from "next-themes";
 import React, { useEffect, useMemo, useRef } from "react";
 import WrapButton from "@/components/ui/wrap-button";
+import TextType from "@/component/TextType/TextType";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const HeroSection = () => {
@@ -83,9 +84,21 @@ const HeroSection = () => {
         <h1 className="text-xl md:text-7xl font-bold w-full md:w-[80%] text-center text-brand">
           India का Smartest Crypto Trading App
         </h1>
-        <p className="text-sub-text text-center text-xl font-semibold">
+
+        <TextType
+          text={[
+            "Launch Bonus: Get ₹250 worth of Bitcoin FREE",
+            "Launch Bonus: Get ₹250 worth of Bitcoin FREE",
+          ]}
+          typingSpeed={75}
+          pauseDuration={1500}
+          showCursor={true}
+          cursorCharacter="|"
+          className=" text-center text-xl font-semibold"
+        />
+        {/* <p className="text-sub-text text-center text-xl font-semibold">
           Launch Bonus: Get ₹250 worth of Bitcoin FREE
-        </p>
+        </p> */}
         <div className="w-full flex items-center justify-center">
           <WrapButton className="mt-10" href="/docs/components/card-carousel">
             <ExternalLink />
