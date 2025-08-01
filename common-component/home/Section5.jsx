@@ -7,9 +7,9 @@ const Section5 = () => {
         <div className="grid grid-cols-12  w-full xl:w-[70%]   gap-5   mx-10 md:mx-0 rounded-3xl h-[500px] bg-gradient-to-tl from-[#023768] to-[#14161f] inset-shadow-2xs shadow-[#0888ff]">
           <div className="col-span-12 md:col-span-6 flex items-center px-8">
             <p className="text-2xl md:text-6xl font-medium">
-              Low <span className="text-white/50">percent</span> <br />{" "}
-              commission <br /> <span className="text-white/50">for</span>{" "}
-              transfers
+              Made for Mobile. Built for You.
+              <span className="text-white/50"></span> <br /> <br />{" "}
+              <span className="text-white/50"></span>
             </p>
           </div>
           <div className="col-span-12 md:col-span-6 relative h-60 md:h-auto">
@@ -28,22 +28,26 @@ const Section5 = () => {
           gap-8 "
           >
             <p className="text-2xl font-medium">
+              Nowory{" "}
+              <span className="text-white/40">
+                is a fast, secure, and beginner-friendly crypto platform that
+                lets you buy, sell, and own digital assets instantly - with zero
+                trading fees and no hidden complexity.
+              </span>
+            </p>
+            {/* <p className="text-2xl font-medium">
               Buy now, pay later.{" "}
               <span className="text-white/40">
                 Make purchases now and pay in small, easy parts later. Great for
                 big buys, making them easy to afford without paying all at once.
               </span>
-            </p>
+            </p> */}
+            {/*  */}
             <img src="/assets/sec52.avif" alt="" />
           </div>
           <div className="col-span-12 md:col-span-6 row-span-12 md:row-span-8 bg-[#1c81fc] rounded-3xl flex items-center justify-center">
             <p className="text-3xl md:text-5xl font-medium ">
-              <span className="text-white/50">Designed for</span> <br /> wise
-              control{" "}
-              <span className="text-white/50">
-                of <br /> your money
-              </span>
-              .
+              Own More, Worry Less &nbsp; &nbsp; - That’s Nowory.
             </p>
           </div>
           <div className=" col-span-12 md:col-span-6 row-span-12 md:row-span-4 bg-gradient-to-tl from-[#023768] to-[#14161f] rounded-3xl flex items-center justify-center">

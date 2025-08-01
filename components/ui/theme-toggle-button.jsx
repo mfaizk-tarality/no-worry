@@ -30,8 +30,6 @@ export default function ThemeToggleButton({
     }
 
     styleElement.textContent = css;
-
-    console.log("content updated");
   }, []);
 
   const toggleTheme = React.useCallback(() => {

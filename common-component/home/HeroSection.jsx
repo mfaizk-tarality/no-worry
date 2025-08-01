@@ -71,12 +71,12 @@ const HeroSection = () => {
 
   return (
     <div className="bg-gradient-to-r from-white to-customPurple/50 w-full flex justify-center flex-col">
-      <div className="h-full w-full flex flex-col justify-center items-center py-20">
-        <h1 className="text-xl md:text-8xl font-bold w-full md:w-[80%] text-center ">
-          Payments and transfers. <br /> Fast and safe.
+      <div className="h-full w-full flex flex-col justify-center items-center py-20 gap-4">
+        <h1 className="text-xl md:text-7xl font-bold w-full md:w-[80%] text-center text-brand">
+          India का Smartest Crypto Trading App
         </h1>
-        <p className="text-gray-500 text-center">
-          Local and international transfers, 1000+ types of
+        <p className="text-sub-text text-center text-xl font-semibold">
+          Launch Bonus: Get ₹250 worth of Bitcoin FREE
         </p>
       </div>
       <div className="relative  w-full">
@@ -97,19 +97,19 @@ const HeroSection = () => {
         </div>
         <div className="hidden lg:flex items-center md:justify-end md:absolute md:top-1/2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2  z-10 w-full h-full  ">
           <div className="md:w-[50%] w-full">
-            <h2 className="text-5xl text-start font-bold">
-              Launch Bonus: ₹250 Bitcoin FREE <br /> • Limited to first 29,999
-              users <br />• 27,152 spots remaining
-            </h2>
+            <ul className="text-5xl text-start font-semibold text-sub-text">
+              <li> • Limited to first 29,999 users</li>
+              <li> • 27,152 spots remaining</li>
+            </ul>
           </div>
         </div>
       </div>
       <div className=" lg:hidden flex items-center  z-10 w-full h-full  ">
-        <div className="w-full">
-          <h2 className="text-5xl text-start font-bold">
-            Launch Bonus: ₹250 Bitcoin FREE <br /> • Limited to first 29,999
-            users <br />• 27,152 spots remaining
-          </h2>
+        <div className="w-full text-center">
+          <ul className="text-xl text-start font-semibold text-sub-text flex items-center justify-center flex-col">
+            <li> • Limited to first 29,999 users</li>
+            <li> • 27,152 spots remaining</li>
+          </ul>
         </div>
       </div>
     </div>

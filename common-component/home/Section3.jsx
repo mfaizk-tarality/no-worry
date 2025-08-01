@@ -7,7 +7,8 @@ const Section3 = () => {
         <div className="col-span-12 flex flex-col items-center gap-4">
           <img src="/assets/section3.avif" className="object-contain h-14" />
           <p className="text-3xl lg:text-6xl text-center bg-gradient-to-r from-black to-black/20 text-transparent bg-clip-text font-light">
-            Supercharged <br /> with integrations
+            Everything You Need.
+            <br /> Nothing You Don’t.
           </p>
         </div>
         <div className="col-span-12 grid grid-cols-12 mt-16 gap-6">
@@ -39,57 +40,52 @@ export default Section3;
 
 const items = [
   {
-    label: "Zapier",
-    sublabel:
-      "Automate finance tasks by integrating our app with Zapier's capabilities",
+    label: "Built for All Levels",
+    sublabel: "Whether you’re new or pro, the app fits your crypto journey.",
     img: "/assets/section3.avif",
   },
   {
-    label: "Zapier",
+    label: "Own While You Pay",
     sublabel:
-      "Automate finance tasks by integrating our app with Zapier's capabilities",
+      "Track your nowory portfolio, manage your payments, and build liquidity.",
     img: "/assets/section3.avif",
   },
   {
-    label: "Zapier",
-    sublabel:
-      "Automate finance tasks by integrating our app with Zapier's capabilities",
+    label: "Free Trading, Always",
+    sublabel: "Enjoy commission-free trades with no surprise costs.",
     img: "/assets/section3.avif",
   },
   {
-    label: "Zapier",
+    label: "Secure by Design",
     sublabel:
-      "Automate finance tasks by integrating our app with Zapier's capabilities",
+      "Your assets are protected with multi-level encryption and biometrics.",
     img: "/assets/section3.avif",
   },
   {
-    label: "Zapier",
-    sublabel:
-      "Automate finance tasks by integrating our app with Zapier's capabilities",
+    label: "Skip the P2P Drama",
+    sublabel: "Avoid delays and disputes with a clean instant execution.",
+    img: "/assets/section3.avif",
+  },
+
+  {
+    label: "Super-Fast Trade",
+    sublabel: "Execute trades in under 2 seconds",
     img: "/assets/section3.avif",
   },
   {
-    label: "Zapier",
-    sublabel:
-      "Automate finance tasks by integrating our app with Zapier's capabilities",
+    label: "24/7 Support",
+    sublabel: "Get expert help anytime with our round-the-clock support team.",
     img: "/assets/section3.avif",
   },
   {
-    label: "Zapier",
-    sublabel:
-      "Automate finance tasks by integrating our app with Zapier's capabilities",
+    label: "Instant Withdrawals",
+    sublabel: "Access your funds instantly with quick and easy withdrawals.",
     img: "/assets/section3.avif",
   },
   {
-    label: "Zapier",
+    label: "Real-Time Price Alerts",
     sublabel:
-      "Automate finance tasks by integrating our app with Zapier's capabilities",
-    img: "/assets/section3.avif",
-  },
-  {
-    label: "Zapier",
-    sublabel:
-      "Automate finance tasks by integrating our app with Zapier's capabilities",
+      "Stay updated with instant alerts on price movements you care about.",
     img: "/assets/section3.avif",
   },
 ];

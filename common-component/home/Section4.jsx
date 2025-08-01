@@ -35,8 +35,6 @@ const Section4 = () => {
     }
 
     styleElement.textContent = css;
-
-    console.log("content updated");
   }, []);
 
   const toggleTheme = React.useCallback(
@@ -120,11 +118,15 @@ const Section4 = () => {
               className="h-24 object-contain"
             />
             <p className="bg-gradient-to-r from-[#60b2ff] to-[#60b3ff]/30 text-transparent bg-clip-text font-semibold lg:text-6xl text-center">
-              Comprehensive security <br /> of anti-fraud
+              Consistency <br /> The Nowory Way
             </p>
             <p className="text-xs text-center text-gray-600">
-              An extensive security system has been implemented <br />
-              <span className="text-white">for privacy of your money.</span>
+              What’s yours stays yours — safe, intact, and always accessible.
+              <br />
+              <span className="text-white">
+                From login to trade, every step is shielded with layered
+                security and proactive fraud detection.
+              </span>
             </p>
           </div>
         </div>

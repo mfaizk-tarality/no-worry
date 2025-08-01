@@ -42,6 +42,8 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --color-brand: rgb(81, 45, 168);
+  --color-sub-text: rgb(39, 55, 70);
 }
 
 @media (prefers-color-scheme: light) {

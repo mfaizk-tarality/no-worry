@@ -3,7 +3,15 @@ import React from "react";
 
 const Section2 = () => {
   return (
-    <div className="w-full flex justify-center items-center container mx-auto">
+    <div className="w-full flex justify-center items-center flex-col container mx-auto">
+      <div className="py-20 text-center flex flex-col gap-3">
+        <p className=" text-5xl font-semibold text-sub-text">
+          Finally, An app that doesn't hold your crypto hostage.
+        </p>
+        <p className="text-xl ">
+          Withdraw anytime. To anywhere. No questions asked. No excuses
+        </p>
+      </div>
       <div className="grid grid-cols-12  w-full xl:w-[70%]   gap-5  md:h-[140vh] mx-10 md:mx-0">
         {items?.map((item, idx) => {
           return (
@@ -18,7 +26,7 @@ const Section2 = () => {
                 className={clsx(" flex items-center justify-center flex-col ")}
               >
                 <div className="flex items-center justify-center flex-col mb-20 gap-2 group-hover:scale-105  transition-all delay-200 duration-200 ease-linear">
-                  <h2 className="text-6xl font-bold">{item?.title}</h2>
+                  <h2 className="text-4xl font-bold">{item?.title}</h2>
                   <p className="text-gray-500 text-center">{item?.subtitle}</p>
                 </div>
                 <img
@@ -39,27 +47,27 @@ export default Section2;
 
 const items = [
   {
-    title: "Analytics",
-    subtitle: "Keep track of all your incomes and outcomes",
+    title: "Instant Withdrawals",
+    subtitle: "Your crypto, available 24/7. No waiting periods.",
     img: "/assets/dummy.avif",
     row: " md:row-span-6",
   },
   {
-    title: "Analytics",
-    subtitle: "Keep track of all your incomes and outcomes",
+    title: "INR support built-in",
+    subtitle: "Convert to rupees instantly. No third-party services.",
     img: "/assets/dummy.avif",
     row: "md:row-span-3",
   },
   {
-    title: "Analytics",
-    subtitle: "Keep track of all your incomes and outcomes",
+    title: "No P2P Risks",
+    subtitle: "Direct transactions only. No stranger danger.",
     img: "/assets/dummy.avif",
     row: "md:row-span-6",
   },
 
   {
-    title: "Analytics",
-    subtitle: "Keep track of all your incomes and outcomes",
+    title: "Simple Interface",
+    subtitle: "Everything you need. Nothing you don't.",
     img: "/assets/dummy.avif",
     row: "md:row-span-3",
   },
