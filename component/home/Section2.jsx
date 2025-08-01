@@ -4,7 +4,7 @@ import React from "react";
 const Section2 = () => {
   return (
     <div className="w-full flex justify-center items-center container mx-auto">
-      <div className="grid grid-cols-12  w-full xl:w-[70%]   gap-5  md:h-[140vh] ">
+      <div className="grid grid-cols-12  w-full xl:w-[70%]   gap-5  md:h-[140vh] mx-10 md:mx-0">
         {items?.map((item, idx) => {
           return (
             <div

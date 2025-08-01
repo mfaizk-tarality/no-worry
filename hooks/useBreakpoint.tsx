@@ -22,7 +22,7 @@ export const useBreakpoint = (): Breakpoints => {
   }, []);
 
   return {
-    sm: width >= 640 && width < 768,
+    sm: width < 768,
     md: width >= 768 && width < 1024,
     lg: width >= 1024 && width < 1280,
     xl: width >= 1280,
