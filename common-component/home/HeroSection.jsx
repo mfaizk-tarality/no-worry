@@ -4,7 +4,7 @@ import { useBreakpoint } from "@/hooks/useBreakpoint";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { Star } from "lucide-react";
+import { ExternalLink, Star } from "lucide-react";
 import { useTheme } from "next-themes";
 import React, { useEffect, useMemo, useRef } from "react";
 import WrapButton from "@/components/ui/wrap-button";
@@ -73,7 +73,7 @@ const HeroSection = () => {
 
   return (
     <div
-      className=" w-full flex justify-center flex-col"
+      className=" w-full flex justify-center flex-col bg-[linear-gradient(to_bottom,rgba(252,252,252,0),rgba(252,252,252,1)),url('/assets/hero-bg.svg')] bg-no-repeat bg-cover bg-center md:pt-32"
       // style={{
       //   backgroundImage:
       //     "linear-gradient(to right bottom, #e1f6f4, #e6f7fa, #edf9fd, #f4faff, #fafcff, #fafbff, #fafaff, #fbf9ff, #f9f4fe, #f9effc, #faeaf9, #fff);",
@@ -88,12 +88,8 @@ const HeroSection = () => {
         </p>
         <div className="w-full flex items-center justify-center">
           <WrapButton className="mt-10" href="/docs/components/card-carousel">
-            <img
-              src="/assets/playstore.svg"
-              alt=""
-              className=" object-contain  h-6"
-            />
-            Get started
+            <ExternalLink />
+            Get Notified
           </WrapButton>
         </div>
       </div>
@@ -132,27 +128,17 @@ export default HeroSection;
 
 const RightBox = () => {
   return (
-    <div className="w-fit  flex flex-col text-center gap-2 items-center justify-center ">
-      <p className="text-4xl text-sub-text font-semibold">
-        Downloaded by more than
+    <div className="w-fit  flex flex-col text-center gap-2 items-center justify-center mt-20 sm:mt-0">
+      <p className="text-2xl md:text-4xl text-sub-text font-semibold">
+        Launch Bonus: Get ₹250 worth of Bitcoin FREE
       </p>
-      <p className="text-brand text-4xl font-semibold ">5 000 000 people</p>
+
       <div className="flex items-center justify-center mt-4 gap-4 flex-col md:flex-row">
-        <div className="flex border border-gray-500/60 w-56 justify-between p-2 px-4 rounded-4xl items-center ">
-          <div>
-            <p>App Store</p>
-          </div>
-          <div className="flex gap-1">
-            <Star color="yellow" fill="yellow" />
-            <p>4.9</p>
-          </div>
+        <div className="flex ring ring-gray-500/60 hover:ring-customPurple hover:bg-customPurple hover:text-white w-64 justify-center p-2 px-4 rounded-4xl items-center transition-all delay-100 duration-100 ease-linear ">
+          <p>Limited to first 29,999 users</p>
         </div>
-        <div className="flex border border-gray-500/60 w-56 justify-between p-2 px-4 rounded-4xl items-center ">
-          <p>Google Play</p>
-          <div className="flex gap-1">
-            <Star color="yellow" fill="yellow" />
-            <p>4.9</p>
-          </div>
+        <div className="flex ring ring-gray-500/60 hover:ring-customPurple hover:bg-customPurple hover:text-white w-64 justify-center p-2 px-4 rounded-4xl items-center transition-all delay-100 duration-100 ease-linear ">
+          <p>27,152 spots remaining</p>
         </div>
       </div>
     </div>

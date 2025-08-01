@@ -109,7 +109,7 @@ const Section4 = () => {
             alt=""
             className="w-[80%] lg:w-[400px] xl:w-[600px] object-contain absolute z-20"
           />
-          <div className="flex flex-col justify-center items-center z-40 absolute  h-[700px]">
+          <div className="flex flex-col justify-end items-center z-40 absolute h-[500px] md:h-[700px] pb-42 w-[80%] md:w-auto">
             <img
               src="/assets/shield.avif"
               alt=""
@@ -118,13 +118,13 @@ const Section4 = () => {
             <p className="bg-gradient-to-r from-[#60b2ff] to-[#60b3ff]/30 text-transparent bg-clip-text font-semibold lg:text-6xl text-center">
               Consistency <br /> The Nowory Way
             </p>
-            <p className="text-xs text-center text-gray-600">
+            <p className="text-xs text-center text-gray-300 mt-4 md:mt-8 ">
               What’s yours stays yours — safe, intact, and always accessible.
               <br />
-              <span className="text-white">
+              <p className="text-white mt-4 md:mt-8 ">
                 From login to trade, every step is shielded with layered
                 security and proactive fraud detection.
-              </span>
+              </p>
             </p>
           </div>
         </div>

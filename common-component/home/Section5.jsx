@@ -46,8 +46,8 @@ const Section5 = () => {
             <img src="/assets/sec52.avif" alt="" />
           </div>
           <div className="col-span-12 md:col-span-6 row-span-12 md:row-span-8 bg-[#1c81fc] rounded-3xl flex items-center justify-center">
-            <p className="text-3xl md:text-5xl font-medium ">
-              Own More, Worry Less &nbsp; &nbsp; - That’s Nowory.
+            <p className="text-3xl md:text-5xl font-medium text-center">
+              Own More, Worry Less <br /> That’s Nowory.
             </p>
           </div>
           <div className=" col-span-12 md:col-span-6 row-span-12 md:row-span-4 bg-gradient-to-tl from-[#023768] to-[#14161f] rounded-3xl flex items-center justify-center">

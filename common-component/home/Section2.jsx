@@ -5,10 +5,10 @@ const Section2 = () => {
   return (
     <div className="w-full flex justify-center items-center flex-col container mx-auto">
       <div className="py-20 text-center flex flex-col gap-3">
-        <p className=" text-5xl font-semibold text-sub-text">
+        <p className="text-2xl md:text-5xl font-semibold text-sub-text">
           Finally, An app that doesn't hold your crypto hostage.
         </p>
-        <p className="text-xl ">
+        <p className="text-sm md:text-xl ">
           Withdraw anytime. To anywhere. No questions asked. No excuses
         </p>
       </div>

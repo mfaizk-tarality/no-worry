@@ -11,7 +11,7 @@ const WrapButton = ({ className, children, href }) => {
         <Link href={href}>
           <div
             className={cn(
-              "group cursor-pointer border group border-[#3B3A3A] bg-customPurple gap-2  h-[64px] flex items-center p-[11px] rounded-full",
+              "group cursor-pointer border group border-[#3B3A3A] bg-customPurple gap-2 h-[42px] md:h-[54px] flex items-center p-[11px] rounded-full",
               className
             )}
           >
@@ -20,7 +20,7 @@ const WrapButton = ({ className, children, href }) => {
                 {children}
               </p>
             </div>
-            <div className="text-[#3b3a3a] group-hover:ml-2  ease-in-out transition-all size-[26px] flex items-center justify-center rounded-full border-2 border-white  ">
+            <div className="text-[#3b3a3a] group-hover:ml-2  ease-in-out transition-all size-[26px]  items-center justify-center rounded-full border-2 border-white hidden md:flex ">
               <ArrowRight
                 size={18}
                 className="group-hover:rotate-45 ease-in-out transition-all text-white "
