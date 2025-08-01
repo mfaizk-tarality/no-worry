@@ -4,13 +4,20 @@ import { useBreakpoint } from "@/hooks/useBreakpoint";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import React, { useMemo, useRef } from "react";
+import { useTheme } from "next-themes";
+import React, { useEffect, useMemo, useRef } from "react";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const HeroSection = () => {
+  const { setTheme } = useTheme();
+
   const imageRef = useRef();
   const boxRef = useRef();
   const { md, lg, sm, xl } = useBreakpoint();
+
+  useEffect(() => {
+    setTheme("light");
+  }, []);
 
   const yAxisvalue = useMemo(() => {
     if (xl) {
