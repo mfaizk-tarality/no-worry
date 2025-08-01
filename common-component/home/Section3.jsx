@@ -24,7 +24,9 @@ const Section3 = () => {
               >
                 <div className="flex gap-2 items-center">
                   <img src={item?.img} className="object-center h-8" />
-                  <p className="text-xl">{item?.label}</p>
+                  <p className="text-xl text-sub-text• Limited to first 29,999 users">
+                    {item?.label}
+                  </p>
                 </div>
                 <p className="text-gray-700/90">{item?.sublabel}</p>
               </div>

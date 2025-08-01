@@ -26,8 +26,10 @@ const Section2 = () => {
                 className={clsx(" flex items-center justify-center flex-col ")}
               >
                 <div className="flex items-center justify-center flex-col mb-20 gap-2 group-hover:scale-105  transition-all delay-200 duration-200 ease-linear">
-                  <h2 className="text-4xl font-bold">{item?.title}</h2>
-                  <p className="text-gray-500 text-center">{item?.subtitle}</p>
+                  <h2 className="text-4xl font-bold text-sub-text">
+                    {item?.title}
+                  </h2>
+                  <p className="text-sub-text text-center">{item?.subtitle}</p>
                 </div>
                 <img
                   src={item?.img}

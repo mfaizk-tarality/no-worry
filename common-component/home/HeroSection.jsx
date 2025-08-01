@@ -4,6 +4,7 @@ import { useBreakpoint } from "@/hooks/useBreakpoint";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { Star } from "lucide-react";
 import { useTheme } from "next-themes";
 import React, { useEffect, useMemo, useRef } from "react";
 
@@ -97,19 +98,13 @@ const HeroSection = () => {
         </div>
         <div className="hidden lg:flex items-center md:justify-end md:absolute md:top-1/2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2  z-10 w-full h-full  ">
           <div className="md:w-[50%] w-full">
-            <ul className="text-5xl text-start font-semibold text-sub-text">
-              <li> • Limited to first 29,999 users</li>
-              <li> • 27,152 spots remaining</li>
-            </ul>
+            <RightBox />
           </div>
         </div>
       </div>
       <div className=" lg:hidden flex items-center  z-10 w-full h-full  ">
         <div className="w-full text-center">
-          <ul className="text-xl text-start font-semibold text-sub-text flex items-center justify-center flex-col">
-            <li> • Limited to first 29,999 users</li>
-            <li> • 27,152 spots remaining</li>
-          </ul>
+          <RightBox />
         </div>
       </div>
     </div>
@@ -117,3 +112,32 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
+const RightBox = () => {
+  return (
+    <div className="w-fit  flex flex-col text-center gap-2 items-center justify-center">
+      <p className="text-4xl text-sub-text font-semibold">
+        Downloaded by more than
+      </p>
+      <p className="text-brand text-4xl font-semibold ">5 000 000 people</p>
+      <div className="flex items-center justify-center mt-4 gap-4 flex-col md:flex-row">
+        <div className="flex border border-gray-500/60 w-56 justify-between p-2 px-4 rounded-4xl items-center ">
+          <div>
+            <p>App Store</p>
+          </div>
+          <div className="flex gap-1">
+            <Star color="yellow" fill="yellow" />
+            <p>4.9</p>
+          </div>
+        </div>
+        <div className="flex border border-gray-500/60 w-56 justify-between p-2 px-4 rounded-4xl items-center ">
+          <p>Google Play</p>
+          <div className="flex gap-1">
+            <Star color="yellow" fill="yellow" />
+            <p>4.9</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
