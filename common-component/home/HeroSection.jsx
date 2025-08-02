@@ -73,13 +73,7 @@ const HeroSection = () => {
   }, [yAxisvalue]);
 
   return (
-    <div
-      className=" w-full flex justify-center flex-col bg-[linear-gradient(to_bottom,rgba(252,252,252,0),rgba(252,252,252,1)),url('/assets/hero-bg.svg')] bg-no-repeat bg-cover bg-center md:pt-32"
-      // style={{
-      //   backgroundImage:
-      //     "linear-gradient(to right bottom, #e1f6f4, #e6f7fa, #edf9fd, #f4faff, #fafcff, #fafbff, #fafaff, #fbf9ff, #f9f4fe, #f9effc, #faeaf9, #fff);",
-      // }}
-    >
+    <div className=" w-full flex justify-center flex-col bg-[linear-gradient(to_bottom,rgba(252,252,252,0),rgba(252,252,252,1)),url('/assets/hero-bg.svg')] bg-no-repeat bg-cover bg-center md:pt-32">
       <div className="h-full w-full flex flex-col justify-center items-center py-20 gap-4">
         <h1 className="text-xl md:text-7xl font-bold w-full md:w-[80%] text-center text-brand">
           India का Smartest Crypto Trading App
@@ -113,6 +107,7 @@ const HeroSection = () => {
         >
           <img
             src="/assets/hero.avif"
+            // src="/assets/hero.png"
             ref={imageRef}
             className="transform lg:-translate-y-[220px] xl:-translate-y-[520px]"
             style={{
