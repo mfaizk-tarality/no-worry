@@ -34,7 +34,7 @@ const Section2 = () => {
                 <img
                   src={item?.img}
                   alt={idx}
-                  className="h-56 object-contain transition-all delay-200 duration-200 group-hover:scale-125 ease-linear"
+                  className="h-56 object-contain transition-all delay-200 duration-500 group-hover:scale-125 group-hover:rounded-4xl ease-in"
                 />
               </div>
             </div>
@@ -51,26 +51,26 @@ const items = [
   {
     title: "Instant Withdrawals",
     subtitle: "Your crypto, available 24/7. No waiting periods.",
-    img: "/assets/dummy.avif",
+    img: "/assets/section2/withdraw.svg",
     row: " md:row-span-6",
   },
   {
     title: "INR support built-in",
     subtitle: "Convert to rupees instantly. No third-party services.",
-    img: "/assets/dummy.avif",
+    img: "/assets/section2/inr.svg",
     row: "md:row-span-3",
   },
   {
     title: "No P2P Risks",
     subtitle: "Direct transactions only. No stranger danger.",
-    img: "/assets/dummy.avif",
+    img: "/assets/section2/scam.svg",
     row: "md:row-span-6",
   },
 
   {
-    title: "Simple Interface",
+    title: "Trade",
     subtitle: "Everything you need. Nothing you don't.",
-    img: "/assets/dummy.avif",
+    img: "/assets/section2/trade.svg",
     row: "md:row-span-3",
   },
 ];

@@ -44,50 +44,50 @@ const items = [
   {
     label: "Built for All Levels",
     sublabel: "Whether you’re new or pro, the app fits your crypto journey.",
-    img: "/assets/section3.avif",
+    img: "/assets/section3/1.svg",
   },
   {
     label: "Own While You Pay",
     sublabel:
       "Track your nowory portfolio, manage your payments, and build liquidity.",
-    img: "/assets/section3.avif",
+    img: "/assets/section3/2.svg",
   },
   {
     label: "Free Trading, Always",
     sublabel: "Enjoy commission-free trades with no surprise costs.",
-    img: "/assets/section3.avif",
+    img: "/assets/section3/3.svg",
   },
   {
     label: "Secure by Design",
     sublabel:
       "Your assets are protected with multi-level encryption and biometrics.",
-    img: "/assets/section3.avif",
+    img: "/assets/section3/4.svg",
   },
   {
     label: "Skip the P2P Drama",
     sublabel: "Avoid delays and disputes with a clean instant execution.",
-    img: "/assets/section3.avif",
+    img: "/assets/section3/5.svg",
   },
 
   {
     label: "Super-Fast Trade",
     sublabel: "Execute trades in under 2 seconds",
-    img: "/assets/section3.avif",
+    img: "/assets/section3/6.svg",
   },
   {
     label: "24/7 Support",
     sublabel: "Get expert help anytime with our round-the-clock support team.",
-    img: "/assets/section3.avif",
+    img: "/assets/section3/7.svg",
   },
   {
     label: "Instant Withdrawals",
     sublabel: "Access your funds instantly with quick and easy withdrawals.",
-    img: "/assets/section3.avif",
+    img: "/assets/section3/8.svg",
   },
   {
     label: "Real-Time Price Alerts",
     sublabel:
       "Stay updated with instant alerts on price movements you care about.",
-    img: "/assets/section3.avif",
+    img: "/assets/section3/9.svg",
   },
 ];

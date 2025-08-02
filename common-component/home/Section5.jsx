@@ -14,7 +14,7 @@ const Section5 = () => {
           </div>
           <div className="col-span-12 md:col-span-6 relative h-60 md:h-auto">
             <img
-              src="/assets/section5.avif"
+              src="/assets/sec5.svg"
               alt=""
               className=" md:h-[700px] object-contain absolute"
             />
@@ -22,11 +22,8 @@ const Section5 = () => {
         </div>
       </div>
       <div className="col-span-12 w-full flex justify-center items-center container mx-auto overflow-hidden  md:h-[500px]">
-        <div className="grid grid-cols-12 grid-rows-12  w-full xl:w-[70%]      mx-10 md:mx-0 rounded-3xl md:h-[500px]  gap-6">
-          <div
-            className="col-span-12 md:col-span-6 row-span-12 bg-gradient-to-tl from-[#023768] to-[#14161f] rounded-3xl flex justify-center items-center flex-col p-6
-          gap-8 "
-          >
+        <div className="grid grid-cols-12 grid-rows-12  w-full xl:w-[70%]  mx-10 md:mx-0 rounded-3xl md:h-[500px]  gap-6">
+          <div className="col-span-12 md:col-span-6 row-span-12 bg-gradient-to-tl from-[#023768] to-[#14161f] rounded-3xl flex justify-center items-center flex-col p-6 gap-8 ">
             <p className="text-2xl font-medium">
               Nowory{" "}
               <span className="text-white/40">
