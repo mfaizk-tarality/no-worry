@@ -67,7 +67,7 @@ const HeroSection = () => {
       willChange: "transform",
       opacity: 1,
       transform: "perspective(1200px)",
-      height: "600px",
+      height: "500px",
       rotateX: 0,
     });
   }, [yAxisvalue]);
@@ -109,7 +109,7 @@ const HeroSection = () => {
             src="/assets/hero.avif"
             // src="/assets/hero.png"
             ref={imageRef}
-            className="transform lg:-translate-y-[220px] xl:-translate-y-[520px]"
+            className="transform lg:-translate-y-[220px] xl:-translate-y-[520px] object-contain "
             style={{
               transform: `perspective(1200px) rotateX(20deg)`,
               position: "relative",

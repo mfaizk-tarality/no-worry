@@ -12,7 +12,7 @@ const Section2 = () => {
           Withdraw anytime. To anywhere. No questions asked. No excuses
         </p>
       </div>
-      <div className="grid grid-cols-12  w-full xl:w-[70%]   gap-5  md:h-[140vh] mx-10 md:mx-0">
+      <div className="grid grid-cols-12  w-full xl:w-[70%]   gap-5  md:h-[1000px] mx-10 md:mx-0">
         {items?.map((item, idx) => {
           return (
             <div

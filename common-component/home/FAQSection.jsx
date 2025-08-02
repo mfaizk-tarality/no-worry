@@ -4,6 +4,7 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from "@headlessui/react";
+import clsx from "clsx";
 import { ChevronDownIcon } from "lucide-react";
 const faqs = [
   {
@@ -59,7 +60,13 @@ const FAQSection = () => {
                     </span>
                     <ChevronDownIcon className="size-5 fill-white/60 group-data-hover:fill-white/50 group-data-open:rotate-180" />
                   </DisclosureButton>
-                  <DisclosurePanel className="mt-2 text-sm/5 text-white/90">
+                  <DisclosurePanel
+                    transition
+                    className={clsx(
+                      "origin-top transition duration-200 ease-out data-closed:-translate-y-6 data-closed:opacity-0",
+                      "mt-2 text-sm/5 text-white/90"
+                    )}
+                  >
                     {item?.answer}
                   </DisclosurePanel>
                 </Disclosure>
