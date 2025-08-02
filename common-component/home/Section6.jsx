@@ -1,9 +1,24 @@
+"use client";
 import clsx from "clsx";
-import React from "react";
+import { useInView } from "framer-motion";
+import { useTheme } from "next-themes";
+import React, { useEffect, useRef } from "react";
 
 const Section6 = () => {
+  const { setTheme } = useTheme();
+  const parentRef = useRef();
+  const isInView = useInView(parentRef, {
+    margin: "-1px 0px -99% 0px",
+    once: false,
+  });
+
+  useEffect(() => {
+    if (isInView) {
+      setTheme("dark");
+    }
+  }, [isInView]);
   return (
-    <div className="overflow-hidden mx-10">
+    <div className="overflow-hidden mx-10" ref={parentRef}>
       <div className="w-full flex justify-between mt-52">
         <img src="/assets/left-footer.svg" alt="" className="hidden xl:flex" />
         <div className="flex items-center justify-center flex-col gap-8">

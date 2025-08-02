@@ -1,8 +1,26 @@
-import React from "react";
+"use client";
+
+import { useInView } from "framer-motion";
+import { useTheme } from "next-themes";
+import React, { useEffect, useRef } from "react";
+import { motion, useAnimation } from "framer-motion";
 
 const Section5 = () => {
+  const { setTheme } = useTheme();
+  const parentRef = useRef();
+  const isInView = useInView(parentRef, {
+    margin: "-1px 0px -99% 0px",
+    once: false,
+  });
+
+  useEffect(() => {
+    if (isInView) {
+      setTheme("dark");
+    }
+  }, [isInView]);
+
   return (
-    <div className="grid grid-cols-12 gap-6">
+    <motion.div className="grid grid-cols-12 gap-6" ref={parentRef}>
       <div className="col-span-12 w-full flex justify-center items-center container mx-auto md:mt-52 overflow-hidden h-[500px]">
         <div className="grid grid-cols-12  w-full xl:w-[70%]   gap-5   mx-10 md:mx-0 rounded-3xl h-[500px] bg-gradient-to-tl from-[#023768] to-[#14161f] inset-shadow-2xs shadow-[#0888ff]">
           <div className="col-span-12 md:col-span-6 flex items-center px-8">
@@ -55,7 +73,7 @@ const Section5 = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
