@@ -36,7 +36,7 @@ const items = [
     img: "/assets/section3/2.svg",
   },
   {
-    title: "Free Trading, Always",
+    title: "Zero Trading Fee, Always",
     description: "Enjoy commission-free trades with no surprise costs.",
     img: "/assets/section3/3.svg",
   },
