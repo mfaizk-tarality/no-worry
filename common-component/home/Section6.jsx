@@ -19,7 +19,7 @@ const Section6 = () => {
   }, [isInView]);
   return (
     <div className="overflow-hidden mx-10" ref={parentRef}>
-      <div className="w-full flex justify-between mt-52">
+      <div className="w-full flex justify-between mt-24 md:mt-44">
         <img src="/assets/left-footer.svg" alt="" className="hidden xl:flex" />
         <div className="flex items-center justify-center flex-col gap-8">
           <p className="text-3xl md:text-7xl font-semibold text-center">

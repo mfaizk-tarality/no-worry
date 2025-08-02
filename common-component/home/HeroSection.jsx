@@ -143,9 +143,12 @@ const RightBox = () => {
   return (
     <div className="w-fit  flex flex-col text-center gap-2 items-center justify-center mt-20 sm:mt-0">
       <p className="text-2xl md:text-4xl text-sub-text font-semibold">
-        Launch Bonus: Get ₹250 worth of Bitcoin FREE
+        It’s not a new app. It’s a new experience.
       </p>
-
+      <p className="text-sm md:text-xl text-sub-text">
+        Buy and hold crypto with fast withdrawals and zero fees. Nowory is an
+        experience for the fluent.
+      </p>
       <div className="flex items-center justify-center mt-4 gap-4 flex-col md:flex-row">
         <div className="flex ring ring-gray-500/60  active:ring-customPurple active:bg-customPurple  active:text-white  hover:ring-customPurple hover:bg-customPurple hover:text-white w-64 justify-center p-2 px-4 rounded-4xl items-center transition-all delay-100 duration-100 ease-linear ">
           <p>Limited to first 29,999 users</p>

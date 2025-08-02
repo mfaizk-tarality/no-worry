@@ -8,6 +8,8 @@ import Section4 from "@/common-component/home/Section4";
 import Section5 from "@/common-component/home/Section5";
 import Section6 from "@/common-component/home/Section6";
 import FallingTextComponent from "@/common-component/home/FallingText";
+import QuickStartGuide from "@/common-component/home/QuickStartGuide";
+import SignupReferal from "@/common-component/home/SignupReferal";
 const HomePage = () => {
   return (
     <div>
@@ -15,7 +17,9 @@ const HomePage = () => {
       {/* <Section1 /> */}
       <FallingTextComponent />
       <Section2 />
+      <QuickStartGuide />
       <Section3 />
+      <SignupReferal />
       <Section4 />
       <Section5 />
       <Section6 />
