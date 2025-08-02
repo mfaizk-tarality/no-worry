@@ -195,7 +195,7 @@ const Section4 = () => {
     offset: ["start 80%", "end 20%"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [0, -400]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, -800]);
   const scale = useTransform(scrollYProgress, [0, 1], [1, scaleValue]);
 
   const isInView = useInView(parentRef, {
@@ -230,7 +230,7 @@ const Section4 = () => {
   return (
     <div className="overflow-hidden" ref={parentRef}>
       <div
-        className="w-full flex justify-center items-center container mx-auto mt-52 min-h-screen lg:min-h-[140vh] relative"
+        className="w-full flex justify-center items-center container mx-auto mt-52 min-h-screen  relative"
         ref={boxRef}
       >
         <motion.div
