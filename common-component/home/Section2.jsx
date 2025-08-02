@@ -12,7 +12,7 @@ const Section2 = () => {
           Withdraw anytime. To anywhere. No questions asked. No excuses
         </p>
       </div>
-      <div className="grid grid-cols-12  w-full xl:w-[70%]   gap-5  md:h-[1000px] mx-10 md:mx-0">
+      <div className="grid grid-cols-12  w-full xl:w-[70%]   gap-5  md:h-[1300px] mx-10 md:mx-0">
         {items?.map((item, idx) => {
           return (
             <div
@@ -52,13 +52,13 @@ const items = [
     title: "Instant Trade",
     subtitle:
       "Enjoy real-time prices and zero fees, directly from your wallet.",
-    img: "/assets/section2/withdraw.svg",
+    img: "/assets/section2/trade.svg",
     row: " md:row-span-6",
   },
   {
     title: "Instant Withdrawals",
     subtitle: "Your crypto, available 24/7. No waiting periods.",
-    img: "/assets/section2/inr.svg",
+    img: "/assets/section2/withdraw.svg",
     row: "md:row-span-3",
   },
   {
@@ -71,7 +71,7 @@ const items = [
   {
     title: "INR support built-in",
     subtitle: "Convert to rupees instantly. No third-party services.",
-    img: "/assets/section2/trade.svg",
+    img: "/assets/section2/inr.svg",
     row: "md:row-span-3",
   },
 ];

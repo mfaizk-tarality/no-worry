@@ -69,6 +69,7 @@ const HeroSection = () => {
       transform: "perspective(1200px)",
       height: "500px",
       rotateX: 0,
+      ease: "power2.out",
     });
   }, [yAxisvalue]);
 
@@ -91,7 +92,8 @@ const HeroSection = () => {
           className=" text-center text-xl font-semibold"
         />
       </div>
-      <div className="relative  w-full z-50">
+
+      <div className="relative w-full z-50">
         <div
           className="w-full flex items-center justify-start  flex-col gap-4 overflow-hidden  min-h-[80vh]"
           ref={boxRef}
@@ -100,7 +102,7 @@ const HeroSection = () => {
             src="/assets/hero.avif"
             // src="/assets/hero.png"
             ref={imageRef}
-            className="transform lg:-translate-y-[220px] xl:-translate-y-[520px] object-contain "
+            className="transform lg:-translate-y-[220px] xl:-translate-y-[520px] object-contain"
             style={{
               transform: `perspective(1200px) rotateX(20deg)`,
               position: "relative",
