@@ -49,14 +49,15 @@ export default Section2;
 
 const items = [
   {
-    title: "Instant Withdrawals",
-    subtitle: "Your crypto, available 24/7. No waiting periods.",
+    title: "Instant Trade",
+    subtitle:
+      "Enjoy real-time prices and zero fees, directly from your wallet.",
     img: "/assets/section2/withdraw.svg",
     row: " md:row-span-6",
   },
   {
-    title: "INR support built-in",
-    subtitle: "Convert to rupees instantly. No third-party services.",
+    title: "Instant Withdrawals",
+    subtitle: "Your crypto, available 24/7. No waiting periods.",
     img: "/assets/section2/inr.svg",
     row: "md:row-span-3",
   },
@@ -68,8 +69,8 @@ const items = [
   },
 
   {
-    title: "Trade",
-    subtitle: "Everything you need. Nothing you don't.",
+    title: "INR support built-in",
+    subtitle: "Convert to rupees instantly. No third-party services.",
     img: "/assets/section2/trade.svg",
     row: "md:row-span-3",
   },

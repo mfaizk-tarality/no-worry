@@ -26,8 +26,6 @@ const Section5 = () => {
           <div className="col-span-12 md:col-span-6 flex items-center px-8">
             <p className="text-2xl md:text-6xl font-medium">
               Made for Mobile. Built for You.
-              <span className="text-white/50"></span> <br /> <br />{" "}
-              <span className="text-white/50"></span>
             </p>
           </div>
           <div className="col-span-12 md:col-span-6 relative h-60 md:h-auto">
@@ -50,15 +48,8 @@ const Section5 = () => {
                 trading fees and no hidden complexity.
               </span>
             </p>
-            {/* <p className="text-2xl font-medium">
-              Buy now, pay later.{" "}
-              <span className="text-white/40">
-                Make purchases now and pay in small, easy parts later. Great for
-                big buys, making them easy to afford without paying all at once.
-              </span>
-            </p> */}
-            {/*  */}
-            <img src="/assets/sec52.avif" alt="" />
+
+            <img src="/assets/sec52.svg" alt="" />
           </div>
           <div className="col-span-12 md:col-span-6 row-span-12 md:row-span-8 bg-[#1c81fc] rounded-3xl flex items-center justify-center">
             <p className="text-3xl md:text-5xl font-medium text-center">
