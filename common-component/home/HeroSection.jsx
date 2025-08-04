@@ -17,6 +17,7 @@ const HeroSection = () => {
   const imageRef = useRef();
   const boxRef = useRef();
   const { md, lg, sm, xl } = useBreakpoint();
+  const textBoxRef = useRef();
 
   useEffect(() => {
     setTheme("light");
@@ -59,9 +60,9 @@ const HeroSection = () => {
         // markers: true,
         start: "200px 50%",
         end: "100px 100px",
-        scrub: 0.5,
+        scrub: 1,
+        ease: "expo.out",
       },
-      // x: -400,
       x: xAxisvalue,
       y: yAxisvalue,
       willChange: "transform",
@@ -69,12 +70,25 @@ const HeroSection = () => {
       transform: "perspective(1200px)",
       height: "500px",
       rotateX: 0,
-      ease: "power2.out",
     });
   }, [yAxisvalue]);
 
+  useGSAP(() => {
+    gsap.to(textBoxRef?.current, {
+      scrollTrigger: {
+        trigger: boxRef.current,
+        start: "200px 50%",
+        end: "100px 100px",
+        scrub: 0.5,
+        markers: true,
+      },
+      opacity: 1,
+      scale: 1,
+    });
+  }, []);
+
   return (
-    <div className=" w-full flex justify-center flex-col bg-[linear-gradient(to_bottom,rgba(252,252,252,0),rgba(252,252,252,1)),url('/assets/hero-bg.svg')] bg-no-repeat bg-cover bg-center md:pt-32">
+    <div className=" w-full flex justify-center flex-col bg-[linear-gradient(to_bottom,rgba(252,252,252,0),rgba(252,252,252,1)),url('/assets/hero-bg.svg')] bg-no-repeat bg-cover bg-center md:pt-32 mb-24">
       <div className="h-full w-full flex flex-col justify-center items-center py-20 gap-4">
         <h1 className="text-xl md:text-7xl font-bold w-full md:w-[80%] text-center text-brand">
           India का Smartest Crypto Trading App
@@ -100,23 +114,25 @@ const HeroSection = () => {
         >
           <img
             src="/assets/hero.avif"
-            // src="/assets/hero.png"
             ref={imageRef}
-            className="transform lg:-translate-y-[220px] xl:-translate-y-[520px] object-contain"
+            className="transform lg:-translate-y-[20px] xl:-translate-y-[420px] object-contain w-[900px]"
             style={{
-              transform: `perspective(1200px) rotateX(20deg)`,
-              position: "relative",
+              transform: `perspective(1200px) rotateX(40deg)`,
+              position: "absolute",
               zIndex: 200,
             }}
           />
         </div>
-        <div className="hidden lg:flex items-center md:justify-end md:absolute md:top-1/2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2  z-10 w-full h-full  ">
+        <div
+          ref={textBoxRef}
+          className="hidden lg:flex items-center md:justify-end md:absolute md:top-1/2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2  z-10 w-full h-full opacity-0"
+        >
           <div className="md:w-[60%] w-full ">
             <RightBox />
           </div>
         </div>
       </div>
-      <div className=" lg:hidden flex items-center  z-10 w-full h-full">
+      <div className=" lg:hidden flex items-center  z-10 w-full h-full overflow-hidden scale-100">
         <div className="w-full  text-center">
           <RightBox />
         </div>
@@ -129,7 +145,7 @@ export default HeroSection;
 
 const RightBox = () => {
   return (
-    <div className="w-fit flex flex-col text-center gap-2 items-center justify-center mt-20 sm:mt-0">
+    <div className="w-fit flex flex-col text-center gap-2 items-center justify-center mt-20 sm:mt-0 opacity-100">
       <p className="text-2xl md:text-4xl text-sub-text font-semibold">
         Launch Bonus: Get ₹250 worth of Bitcoin FREE,
       </p>
