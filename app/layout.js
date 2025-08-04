@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/common-component/header";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import { ReactLenis } from "lenis/react";
+import Section6 from "@/common-component/home/Section6";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,8 +29,9 @@ export default function RootLayout({ children }) {
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <ReactLenis root />
-
+          <Header type={"layout"} />
           {children}
+          <Section6 />
         </ThemeProvider>
       </body>
     </html>

@@ -45,39 +45,6 @@ function Marquee({
   );
 }
 
-const tiles = [
-  {
-    icon: <Snowflake className="size-full" />,
-    bg: (
-      <div className="pointer-events-none absolute left-1/2 top-1/2 size-1/2 -translate-x-1/2 -translate-y-1/2 overflow-visible rounded-full bg-gradient-to-r from-orange-600 via-rose-600 to-violet-600 opacity-70 "></div>
-    ),
-  },
-  {
-    icon: <Snowflake className="size-full" />,
-    bg: (
-      <div className="pointer-events-none absolute left-1/2 top-1/2 size-1/2 -translate-x-1/2 -translate-y-1/2 overflow-visible rounded-full bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500 opacity-70 "></div>
-    ),
-  },
-  {
-    icon: <Snowflake className="size-full" />,
-    bg: (
-      <div className="pointer-events-none absolute left-1/2 top-1/2 size-1/2 -translate-x-1/2 -translate-y-1/2 overflow-visible rounded-full bg-gradient-to-r from-green-500 via-teal-500 to-emerald-600 opacity-70 "></div>
-    ),
-  },
-  {
-    icon: <Snowflake className="size-full" />,
-    bg: (
-      <div className="pointer-events-none absolute left-1/2 top-1/2 size-1/2 -translate-x-1/2 -translate-y-1/2 overflow-visible rounded-full bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-600 opacity-70 "></div>
-    ),
-  },
-  {
-    icon: <Snowflake className="size-full" />,
-    bg: (
-      <div className="pointer-events-none absolute left-1/2 top-1/2 size-1/2 -translate-x-1/2 -translate-y-1/2 overflow-visible rounded-full bg-gradient-to-r from-orange-600 via-rose-600 to-violet-600 opacity-70 "></div>
-    ),
-  },
-];
-
 function shuffleArray(array) {
   let currentIndex = array.length;
   let randomIndex;
@@ -105,7 +72,7 @@ function Card(card) {
     if (inView) {
       controls.start({
         opacity: 1,
-        transition: { delay: Math.random() * 2, ease: "easeOut", duration: 1 },
+        transition: { delay: Math.random() * 1, ease: "easeOut", duration: 1 },
       });
     }
   }, [controls, inView]);
@@ -117,57 +84,68 @@ function Card(card) {
       initial={{ opacity: 0 }}
       animate={controls}
       className={cn(
-        "relative size-20 cursor-pointer overflow-hidden rounded-2xl border p-4",
+        "relative size-20 cursor-pointer overflow-hidden rounded-2xl border p-2",
         "bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]",
-        "transform-gpu dark:bg-transparent dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]"
+        "transform-gpu dark:bg-transparent dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]",
+        "h-36 w-36"
       )}
     >
-      {card.icon}
-      {card.bg}
+      <div className="flex flex-col items-center gap-2">
+        <img
+          src={card?.icon}
+          alt=""
+          className="rounded-full object-contain h-10"
+        />
+        <p className="text-xs">{card?.name}</p>
+        <p
+          className="text-xs"
+          style={{
+            color: colorDecider(card?.direction),
+          }}
+        >
+          {Number(card?.price)?.toFixed(card?.decimal)} USDT{" "}
+        </p>
+        <p
+          className="text-xs"
+          style={{
+            color: colorDecider(card?.direction),
+          }}
+        >{`(${Number(card?.percentage).toFixed(2)}%)`}</p>
+      </div>
     </motion.div>
   );
 }
 
-export function SkiperMarquee() {
+export function SkiperMarquee({ coinList }) {
   const [randomTiles1, setRandomTiles1] = useState([]);
   const [randomTiles2, setRandomTiles2] = useState([]);
-  const [randomTiles3, setRandomTiles3] = useState([]);
-  const [randomTiles4, setRandomTiles4] = useState([]);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      // Ensures this runs client-side
-      setRandomTiles1(shuffleArray([...tiles]));
-      setRandomTiles2(shuffleArray([...tiles]));
-      setRandomTiles3(shuffleArray([...tiles]));
-      setRandomTiles4(shuffleArray([...tiles]));
+      if (randomTiles1?.length == 0 && randomTiles2 == 0) {
+        // Ensures this runs client-side
+        setRandomTiles1(shuffleArray([...coinList]));
+        setRandomTiles2(shuffleArray([...coinList]));
+      }
     }
-  }, []);
+  }, [coinList]);
 
   return (
     <section id="cta">
       <div className="px-4 py-12 md:px-8">
         <div className="flex w-full flex-col items-center justify-center">
           <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
-            <Marquee
-              reverse
-              className="-delay-[200ms] [--duration:10s]"
-              repeat={5}
-            >
+            <Marquee className="-delay-[200ms] [--duration:80s]" repeat={5}>
               {randomTiles1.map((review, idx) => (
                 <Card key={idx} {...review} />
               ))}
             </Marquee>
-            <Marquee reverse className="[--duration:25s]" repeat={5}>
+            <Marquee reverse className="[--duration:85s]" repeat={5}>
               {randomTiles2.map((review, idx) => (
                 <Card key={idx} {...review} />
               ))}
             </Marquee>
-            <Marquee
-              reverse
-              className="-delay-[200ms] [--duration:20s]"
-              repeat={5}
-            >
+            <Marquee className="-delay-[200ms] [--duration:90s]" repeat={5}>
               {randomTiles1.map((review, idx) => (
                 <Card key={idx} {...review} />
               ))}
@@ -201,3 +179,15 @@ export function SkiperMarquee() {
     </section>
   );
 }
+
+const colorDecider = (direction) => {
+  switch (direction) {
+    case "up":
+      return "#16c784";
+    case "down":
+      return "#ea3943";
+
+    default:
+      break;
+  }
+};

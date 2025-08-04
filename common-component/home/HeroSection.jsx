@@ -88,7 +88,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className=" w-full flex justify-center flex-col ">
+    <div className=" w-full flex justify-center flex-col mb-24 2xl:mb-0">
       <Header />
       <div className="h-full w-full flex flex-col justify-center items-center py-20 gap-4">
         <h1 className="text-xl md:text-7xl font-bold w-full md:w-[80%] text-center text-brand">

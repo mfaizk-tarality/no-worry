@@ -29,7 +29,6 @@ const HomePage = () => {
       <Section4 />
       <Section5 />
       <FAQSection />
-      <Section6 />
     </div>
   );
 };

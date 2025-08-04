@@ -1,7 +1,14 @@
+"use client";
+
 import React from "react";
 import WrapButton from "@/components/ui/wrap-button";
+import { usePathname } from "next/navigation";
 
-const Header = () => {
+const Header = ({ type }) => {
+  const pathname = usePathname();
+  if (type == "layout" && pathname == "/home") {
+    return <></>;
+  }
   return (
     <div className="min-w-full   flex flex-row justify-between items-center px-2 md:px-10   py-4  z-[9999]">
       <div className="text-black flex  dark:hidden">

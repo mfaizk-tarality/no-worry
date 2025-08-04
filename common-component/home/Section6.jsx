@@ -1,7 +1,9 @@
 "use client";
 import clsx from "clsx";
 import { useInView } from "framer-motion";
+import moment from "moment";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 import React, { useEffect, useRef } from "react";
 
 const Section6 = () => {
@@ -38,10 +40,14 @@ const Section6 = () => {
           className="hidden 2xl:flex"
         />
       </div>
-      <div className="mx-6 flex justify-between flex-col md:flex-row mt-10 md:mt-0">
-        <div className="w-full md:w-96">
-          <p>Company Logo</p>
-          <p className="text-xs text-white/30">
+      <div className="mx-6 grid grid-cols-12 mt-10 md:mt-0">
+        <div className="col-span-12 md:col-span-3">
+          <img
+            src="/assets/logo-light.svg"
+            alt=""
+            className="h-10 object-contain"
+          />
+          <p className="text-xs text-white/30 mt-2">
             Comprehensive security of anti-fraud An extensive security system
             has been implemented for privacy of your money. Fintap is a company
             specializing in financial technology, not a traditional bank. Its
@@ -50,7 +56,24 @@ const Section6 = () => {
             open source behance. the original work
           </p>
         </div>
-        <div className="flex items-center gap-4 justify-center">
+        <div className="col-span-12 md:col-span-6 gap-3 flex items-center justify-center flex-wrap mt-10 md:mt-0">
+          <Link href={"#"} className="cursor-pointer">
+            Terms & Condition
+          </Link>
+          <Link href={"#"} className="cursor-pointer">
+            AML Policy
+          </Link>
+          <Link href={"#"} className="cursor-pointer">
+            Privacy Policy
+          </Link>
+          <Link href={"#"} className="cursor-pointer">
+            Trading Policy
+          </Link>
+          <Link href={"#"} className="cursor-pointer">
+            Cookie Policy
+          </Link>
+        </div>
+        <div className="col-span-12 md:col-span-3 flex items-center gap-4 justify-center mt-10 md:mt-0">
           {socials?.map((item, idx) => {
             return (
               <div className="" key={idx}>
@@ -66,6 +89,12 @@ const Section6 = () => {
             );
           })}
         </div>
+      </div>
+      <hr className="my-2" />
+      <div className="flex justify-center items-center mb-2">
+        <p className="text-xs">
+          COPYRIGHT © {moment().year()} nowory. All rights reserved.
+        </p>
       </div>
     </div>
   );

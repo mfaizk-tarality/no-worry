@@ -8,24 +8,28 @@ import clsx from "clsx";
 import { ChevronDownIcon } from "lucide-react";
 const faqs = [
   {
-    question: "How to create an account?",
+    question: "How do I create an account on Nowory?",
     answer:
-      "To create an account, find the 'Sign up' or 'Create account' button, fill out the registration form with your personal information, and click 'Create account' or 'Sign up.' Verify your email address if needed, and then log in to start using the platform.",
+      "Click on the Sign Up button on the top-right corner, fill in your details, verify your mobile number via OTP, and you're all set.",
   },
   {
-    question: "Have any trust issue?",
+    question: "Is my account secure?",
     answer:
-      "Our focus on providing robust and user-friendly content management capabilities ensures that you can manage your content with confidence, and achieve your content marketing goals with ease.",
+      "Yes. We use industry-standard encryption and authentication methods to ensure your data and funds are protected.",
   },
   {
-    question: "How can I reset my password?",
+    question: "How do I deposit funds into my Nowory wallet?",
     answer:
-      "You can reset your password by clicking on 'Forgot Password' on the login page and following the instructions sent to your email.",
+      "Go to the Wallet section, select Deposit, choose your preferred method (INR, USDT, etc.), and follow the instructions.",
   },
   {
-    question: "What is the payment process?",
+    question: "What payment methods do you support?",
+    answer: "We support bank transfers and USDT through crypto wallets.",
+  },
+  {
+    question: "How long does it take for a deposit to reflect?",
     answer:
-      "Once your account is verified, you can deposit funds using your linked bank account or UPI, and start trading immediately.",
+      "INR deposits usually reflect within 5 minutes. Crypto deposits may take a few confirmations on the blockchain.",
   },
 ];
 
@@ -45,6 +49,11 @@ const FAQSection = () => {
             <p className="font-medium">Raise a ticket</p>
             <p className="font-semibold text-2xl">Click Here</p>
           </div>
+          <img
+            src="/assets/cutomer.svg"
+            alt=""
+            className="object-contain h-28 mt-10"
+          />
         </div>
         <div className="col-span-12 md:col-span-6 flex items-start justify-start flex-col">
           <div className="flex items-center justify-center w-full my-12">

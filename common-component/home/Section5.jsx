@@ -51,15 +51,26 @@ const Section5 = () => {
 
             <img src="/assets/sec52.svg" alt="" />
           </div>
-          <div className="col-span-12 md:col-span-6 row-span-12 md:row-span-8 bg-[#1c81fc] rounded-3xl flex items-center justify-center">
-            <p className="text-3xl md:text-5xl font-medium text-center">
-              Own More, Worry Less <br /> That’s Nowory.
+          <div className="relative col-span-12 md:col-span-6 row-span-12 md:row-span-8 bg-[#1c81fc] rounded-3xl flex items-center justify-center flex-col gap-6">
+            <img
+              src="/assets/safe.png"
+              alt=""
+              className="object-contain w-14 md:w-28 absolute top-4 right-4"
+            />
+            <p className="text-xl md:text-4xl font-medium text-center">
+              Safe Custody
+            </p>
+
+            <p className="text-lg md:text-2xl font-medium text-center">
+              Nowory’s custodians are SOC 2 Type II certified and undergo
+              regular third-party audits and cybersecurity testing, ensuring the
+              highest standards of digital asset protection.
             </p>
           </div>
           <div className=" col-span-12 md:col-span-6 row-span-12 md:row-span-4 bg-gradient-to-tl from-[#023768] to-[#14161f] rounded-3xl flex items-center justify-center">
             <p className="text-3xl font-medium text-center">
-              Get real-time notifications <br />{" "}
-              <span className="text-white/50">about all your transactions</span>
+              Own More, Worry Less <br />{" "}
+              <span className="text-white/50">That’s Nowory.</span>
             </p>
           </div>
         </div>
