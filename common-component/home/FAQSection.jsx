@@ -32,7 +32,7 @@ const faqs = [
 const FAQSection = () => {
   return (
     <div className="w-full flex justify-center items-center container mx-auto mt-24 md:mt-44">
-      <div className="grid grid-cols-12  w-full xl:w-[70%]   gap-5   mx-10 md:mx-0 rounded-2xl overflow-hidden bg-gradient-to-tl from-[#023768] to-[#14161f] inset-shadow-2xs shadow-[#0888ff]">
+      <div className="grid grid-cols-12  w-full xl:w-[70%]   gap-5   mx-2 md:mx-0  rounded-2xl overflow-hidden bg-gradient-to-tl from-[#023768] to-[#14161f] inset-shadow-2xs shadow-[#0888ff]">
         <div className="col-span-12 md:col-span-6 bg-[#1c81fc] p-8 md:p-32">
           <div className="flex items-center justify-center">
             <p className="text-3xl font-semibold">24x7 Customer Support</p>

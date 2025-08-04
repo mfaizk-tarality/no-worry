@@ -4,7 +4,7 @@ import React from "react";
 
 const SignupReferal = () => {
   return (
-    <div className="w-full flex flex-col gap-20 justify-center items-center container mx-auto md:mt-44">
+    <div className="w-full flex flex-col gap-8 md:gap-20 justify-center items-center container mx-auto md:mt-44">
       <p className="text-3xl lg:text-6xl text-center text-sub-text">
         Inviting friends comes <br /> with rewards.
       </p>
@@ -27,7 +27,7 @@ export default SignupReferal;
 
 const CardOne = () => {
   return (
-    <div className="col-span-12 md:col-span-4 p-4 mt-40">
+    <div className="col-span-12 md:col-span-4 p-4 md:mt-40">
       <div className="flex flex-col gap-6 border border-gray-700/10 p-4 rounded-2xl">
         <p className="text-xl font-semibold">Invite & Earn with Nowory</p>
         <p className="text-gray-700/80">

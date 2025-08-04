@@ -22,7 +22,7 @@ const Section5 = () => {
   return (
     <motion.div className="grid grid-cols-12 gap-6" ref={parentRef}>
       <div className="col-span-12 w-full flex justify-center items-center container mx-auto md:mt-24 overflow-hidden h-[500px]">
-        <div className="grid grid-cols-12  w-full xl:w-[70%] gap-5 mx-10 md:mx-0 rounded-3xl h-[500px] bg-gradient-to-tl from-[#023768] to-[#14161f] inset-shadow-2xs shadow-[#0888ff]">
+        <div className="grid grid-cols-12  w-full xl:w-[70%] gap-5 mx-2 md:mx-0 rounded-3xl h-[500px] bg-gradient-to-tl from-[#023768] to-[#14161f] inset-shadow-2xs shadow-[#0888ff]">
           <div className="col-span-12 md:col-span-6 flex items-center px-8">
             <p className="text-2xl md:text-6xl font-medium">
               Made for Mobile. Built for You.
@@ -32,13 +32,13 @@ const Section5 = () => {
             <img
               src="/assets/sec5.png"
               alt=""
-              className=" md:h-[700px] object-contain absolute"
+              className="h-[500px] md:h-[700px] object-contain absolute"
             />
           </div>
         </div>
       </div>
       <div className="col-span-12 w-full flex justify-center items-center container mx-auto overflow-hidden  md:h-[500px]">
-        <div className="grid grid-cols-12 grid-rows-12  w-full xl:w-[70%]  mx-10 md:mx-0 rounded-3xl md:h-[500px]  gap-6">
+        <div className="grid grid-cols-12 grid-rows-12  w-full xl:w-[70%]  mx-2 md:mx-0  rounded-3xl md:h-[500px]  gap-6">
           <div className="col-span-12 md:col-span-6 row-span-12 bg-gradient-to-tl from-[#023768] to-[#14161f] rounded-3xl flex justify-center items-center flex-col p-6 gap-8 ">
             <p className="text-2xl font-medium">
               Nowory{" "}

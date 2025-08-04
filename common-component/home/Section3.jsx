@@ -13,7 +13,7 @@ const Section3 = () => {
             <br /> Nothing You Don’t.
           </p>
         </div>
-        <div className="col-span-12  mt-16 gap-6">
+        <div className="col-span-12  md:mt-16 gap-6">
           <HoverEffect items={items} />
         </div>
       </div>

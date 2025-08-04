@@ -88,7 +88,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className=" w-full flex justify-center flex-col bg-[linear-gradient(to_bottom,rgba(252,252,252,0),rgba(252,252,252,1)),url('/assets/hero-bg.svg')] bg-no-repeat bg-cover bg-center  mb-24">
+    <div className=" w-full flex justify-center flex-col ">
       <Header />
       <div className="h-full w-full flex flex-col justify-center items-center py-20 gap-4">
         <h1 className="text-xl md:text-7xl font-bold w-full md:w-[80%] text-center text-brand">
@@ -123,7 +123,7 @@ const HeroSection = () => {
           ref={textBoxRef}
           className="hidden lg:flex items-center md:justify-end md:absolute md:top-1/2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2  z-10 w-full h-full opacity-0"
         >
-          <div className="md:w-[60%] w-full ">
+          <div className="md:w-[50%] w-full ">
             <RightBox />
           </div>
         </div>
@@ -141,7 +141,7 @@ export default HeroSection;
 
 const RightBox = () => {
   return (
-    <div className="w-fit flex flex-col text-center gap-2 items-center justify-center mt-20 sm:mt-0 opacity-100">
+    <div className="lg:w-[70%] flex flex-col text-center gap-2 items-center justify-center mt-20 sm:mt-0 opacity-100 ">
       <p className="text-2xl md:text-4xl text-sub-text font-semibold">
         Launch Bonus: Get ₹250 worth of Bitcoin FREE,
       </p>
