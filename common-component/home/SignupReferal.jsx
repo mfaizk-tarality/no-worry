@@ -10,7 +10,7 @@ const SignupReferal = () => {
       </p>
       <div className="grid grid-cols-12  w-full xl:w-[70%]   gap-5   mx-10 md:mx-0 ">
         <CardOne />
-        <div className="col-span-12 md:col-span-4">
+        <div className="col-span-12 md:col-span-4 flex items-center justify-center">
           <img
             src="/assets/signup.png"
             alt=""
