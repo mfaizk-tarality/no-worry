@@ -9,7 +9,7 @@ const Terms = () => {
   const { description, loading, error } = usePrivacyPolicy(slug);
   const { setTheme } = useTheme();
   useEffect(() => {
-    setTheme("light");
+    setTheme("dark");
   }, []);
 
   const heading = useMemo(() => {
@@ -20,7 +20,15 @@ const Terms = () => {
         };
       case "termsConditions":
         return {
-          title: "Terms & Conditions",
+          title: "Terms Of Use",
+        };
+      case "amlPolicy":
+        return {
+          title: "AML Policy",
+        };
+      case "tradingPolicy":
+        return {
+          title: "Trading Policy",
         };
 
       default:

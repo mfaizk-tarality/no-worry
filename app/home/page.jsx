@@ -1,6 +1,7 @@
+"use client";
 import HeroSection from "@/common-component/home/HeroSection";
 import Section1 from "@/common-component/home/Section1";
-import React from "react";
+import React, { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Section2 from "@/common-component/home/Section2";
 import Section3 from "@/common-component/home/Section3";
@@ -12,6 +13,7 @@ import QuickStartGuide from "@/common-component/home/QuickStartGuide";
 import SignupReferal from "@/common-component/home/SignupReferal";
 import FAQSection from "@/common-component/home/FAQSection";
 import PriceMarquee from "@/common-component/home/PriceMarquee";
+import { useTheme } from "next-themes";
 const HomePage = () => {
   return (
     <div>

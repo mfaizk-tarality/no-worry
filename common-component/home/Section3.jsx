@@ -7,7 +7,7 @@ const Section3 = () => {
     <div className="w-full flex justify-center items-center container mx-auto mt-24 md:mt-44">
       <div className="grid grid-cols-12  w-full xl:w-[70%]   gap-5   mx-10 md:mx-0 ">
         <div className="col-span-12 flex flex-col items-center gap-4">
-          <img src="/assets/logo.svg" className="object-contain h-14" />
+          <img src="/assets/only-logo.svg" className="object-contain h-24" />
           <p className="text-3xl lg:text-6xl text-center text-sub-text">
             Everything You Need.
             <br /> Nothing You Don’t.

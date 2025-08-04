@@ -19,6 +19,15 @@ export const metadata = {
   title: "Nowory - Your Gateway to Instant Digital Wealth.",
   description:
     "Nowory offers seamless INR and crypto deposits, withdrawals, and transfers with zero fees and instant execution. Experience effortless crypto transactions, redefined.",
+  icons: {
+    icon: ["/assets/only-logo.svg"],
+    apple: ["/assets/only-logo.svg"],
+    shortcut: ["/assets/only-logo.svg"],
+  },
+  other: {
+    rel: "mask-icon",
+    url: "/assets/only-logo.svg",
+  },
 };
 
 export default function RootLayout({ children }) {

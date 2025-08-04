@@ -14,7 +14,9 @@ import Header from "../header";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const HeroSection = () => {
   const { setTheme } = useTheme();
-
+  useEffect(() => {
+    setTheme("light");
+  }, []);
   const imageRef = useRef();
   const boxRef = useRef();
   const { md, lg, sm, xl } = useBreakpoint();

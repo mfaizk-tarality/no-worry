@@ -22,11 +22,13 @@ const Header = ({ type }) => {
         </Link>
       </div>
       <div className="text-black hidden dark:flex">
-        <img
-          src="/assets/logo-light.svg"
-          alt=""
-          className="object-contain h-6 md:h-10"
-        />
+        <Link href={"/"}>
+          <img
+            src="/assets/logo-light.svg"
+            alt=""
+            className="object-contain h-6 md:h-10"
+          />
+        </Link>
       </div>
       <div className="flex flex-row gap-4">
         <WrapButton className="" href="/docs/components/card-carousel">
