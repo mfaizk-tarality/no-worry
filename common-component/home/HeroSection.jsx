@@ -58,12 +58,11 @@ const HeroSection = () => {
     gsap.to(imageRef?.current, {
       scrollTrigger: {
         trigger: boxRef.current,
-        // markers: true,
         start: "200px 50%",
         end: "200px 20%",
-        scrub: 1.5,
-        duration: 2.5,
-        ease: "expoScale(0.5,7,none)",
+        scrub: 0.5,
+        duration: 0.5,
+        ease: "expoScale(1,7,none)",
       },
       x: xAxisvalue,
       y: yAxisvalue,
