@@ -40,7 +40,7 @@ const Section5 = () => {
       <div className="col-span-12 w-full flex justify-center items-center container mx-auto overflow-hidden  md:h-[500px]">
         <div className="grid grid-cols-12 grid-rows-12  w-full xl:w-[70%]  mx-2 md:mx-0  rounded-3xl md:h-[500px]  gap-6">
           <div className="col-span-12 md:col-span-6 row-span-12 bg-gradient-to-tl from-[#B444BA] to-[#7944BA] rounded-3xl flex justify-center items-center flex-col p-6 gap-8 ">
-            <p className="text-xl font-medium">
+            <p className="px-4">
               Nowory Experience the power of instant execution with Nowory’s
               Lightning-Fast Trade. Designed for agility and precision, our
               trading engine executes your orders in seconds. Whether you're
@@ -60,7 +60,7 @@ const Section5 = () => {
               Safe Custody
             </p>
 
-            <p className="text-lg md:text-xl font-medium text-center">
+            <p className="text-center px-4">
               Nowory’s custodians are SOC 2 Type II certified and undergo
               regular third-party audits and cybersecurity testing, ensuring the
               highest standards of digital asset protection.
