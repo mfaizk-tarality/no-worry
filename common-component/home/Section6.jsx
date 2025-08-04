@@ -7,18 +7,18 @@ import Link from "next/link";
 import React, { useEffect, useRef } from "react";
 
 const Section6 = () => {
-  const { setTheme } = useTheme();
+  const { setTheme, theme } = useTheme();
   const parentRef = useRef();
-  const isInView = useInView(parentRef, {
-    margin: "-1px 0px -99% 0px",
-    once: false,
-  });
+  // const isInView = useInView(parentRef, {
+  //   margin: "-1px 0px -99% 0px",
+  //   once: false,
+  // });
 
-  useEffect(() => {
-    if (isInView) {
-      setTheme("dark");
-    }
-  }, [isInView]);
+  // useEffect(() => {
+  //   if (isInView) {
+  //     setTheme("dark");
+  //   }
+  // }, [isInView]);
   return (
     <div className="overflow-hidden mx-10" ref={parentRef}>
       <div className="w-full flex justify-center 2xl:justify-between mt-24 md:mt-44">
@@ -43,7 +43,9 @@ const Section6 = () => {
       <div className="mx-6 grid grid-cols-12 mt-10 md:mt-0">
         <div className="col-span-12 md:col-span-3">
           <img
-            src="/assets/logo-light.svg"
+            src={
+              theme == "light" ? "/assets/logo.svg" : "/assets/logo-light.svg"
+            }
             alt=""
             className="h-10 object-contain"
           />
@@ -57,13 +59,13 @@ const Section6 = () => {
           </p>
         </div>
         <div className="col-span-12 md:col-span-6 gap-3 flex items-center justify-center flex-wrap mt-10 md:mt-0">
-          <Link href={"#"} className="cursor-pointer">
+          <Link href={"/terms/termsConditions"} className="cursor-pointer">
             Terms & Condition
           </Link>
           <Link href={"#"} className="cursor-pointer">
             AML Policy
           </Link>
-          <Link href={"#"} className="cursor-pointer">
+          <Link href={"/terms/privacyPolicy"} className="cursor-pointer">
             Privacy Policy
           </Link>
           <Link href={"#"} className="cursor-pointer">
