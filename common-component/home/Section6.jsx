@@ -1,10 +1,16 @@
 "use client";
+import {
+  IconBrandInstagram,
+  IconBrandTelegram,
+  IconBrandX,
+} from "@tabler/icons-react";
 import clsx from "clsx";
 import { useInView } from "framer-motion";
 import moment from "moment";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import React, { useEffect, useRef } from "react";
+import SocialIcons from "../socialLinks/social";
 
 const Section6 = () => {
   const { setTheme, theme } = useTheme();
@@ -74,20 +80,17 @@ const Section6 = () => {
           </Link> */}
         </div>
         <div className="col-span-12 md:col-span-3 flex items-center gap-4 justify-center mt-10 md:mt-0">
-          {socials?.map((item, idx) => {
+          {/* {socials?.map((item, idx) => {
             return (
               <div className="" key={idx}>
-                <img
-                  src={item?.icon}
-                  alt=""
-                  className={clsx(
-                    "object-contain transition-all delay-200 duration-200 ease-linear hover:scale-125 cursor-pointer",
-                    item?.className
-                  )}
+                <item.icon
+                  size={32}
+                  className="cursor-pointer hover:scale-125 transition-all delay-200 duration-200 ease-linear "
                 />
               </div>
             );
-          })}
+          })} */}
+          <SocialIcons />
         </div>
       </div>
       <hr className="my-2" />
@@ -104,17 +107,17 @@ export default Section6;
 
 const socials = [
   {
-    icon: "/assets/insta.svg",
+    icon: IconBrandInstagram,
     href: () => {},
     className: "h-8",
   },
   {
-    icon: "/assets/telegram.svg",
+    icon: IconBrandTelegram,
     href: () => {},
     className: "h-10",
   },
   {
-    icon: "/assets/twitter.svg",
+    icon: IconBrandX,
     href: () => {},
     className: "h-10",
   },
