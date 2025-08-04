@@ -40,13 +40,12 @@ const Section5 = () => {
       <div className="col-span-12 w-full flex justify-center items-center container mx-auto overflow-hidden  md:h-[500px]">
         <div className="grid grid-cols-12 grid-rows-12  w-full xl:w-[70%]  mx-2 md:mx-0  rounded-3xl md:h-[500px]  gap-6">
           <div className="col-span-12 md:col-span-6 row-span-12 bg-gradient-to-tl from-[#B444BA] to-[#7944BA] rounded-3xl flex justify-center items-center flex-col p-6 gap-8 ">
-            <p className="text-2xl font-medium">
-              Nowory{" "}
-              <span className="text-white/40">
-                is a fast, secure, and beginner-friendly crypto platform that
-                lets you buy, sell, and own digital assets instantly - with zero
-                trading fees and no hidden complexity.
-              </span>
+            <p className="text-xl font-medium">
+              Nowory Experience the power of instant execution with Nowory’s
+              Lightning-Fast Trade. Designed for agility and precision, our
+              trading engine executes your orders in seconds. Whether you're
+              buying Bitcoin or selling Ethereum, Nowory ensures you never miss
+              a market move.
             </p>
 
             <img src="/assets/sec52.svg" alt="" />
