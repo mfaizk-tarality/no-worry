@@ -19,8 +19,8 @@ const Section6 = () => {
   }, [isInView]);
   return (
     <div className="overflow-hidden mx-10" ref={parentRef}>
-      <div className="w-full flex justify-between mt-24 md:mt-44">
-        <img src="/assets/left-footer.svg" alt="" className="hidden xl:flex" />
+      <div className="w-full flex justify-center 2xl:justify-between mt-24 md:mt-44">
+        <img src="/assets/left-footer.svg" alt="" className="hidden 2xl:flex" />
         <div className="flex items-center justify-center flex-col gap-8">
           <p className="text-3xl md:text-7xl font-semibold text-center">
             See what you'll discover
@@ -32,7 +32,11 @@ const Section6 = () => {
             className="object-contain h-56 w-full md:h-72"
           />
         </div>
-        <img src="/assets/right-footer.svg" alt="" className="hidden xl:flex" />
+        <img
+          src="/assets/right-footer.svg"
+          alt=""
+          className="hidden 2xl:flex"
+        />
       </div>
       <div className="mx-6 flex justify-between flex-col md:flex-row mt-10 md:mt-0">
         <div className="w-full md:w-96">

@@ -116,7 +116,7 @@ const HeroSection = () => {
           <img
             src="/assets/hero.avif"
             ref={imageRef}
-            className="-translate-y-[420px] object-contain w-[900px] absolute z-[200] transform-[perspective(1200px)_rotateX(40deg)]"
+            className=" -translate-y-[220px] md:-translate-y-[420px] object-contain w-[900px] absolute z-[200] transform-[perspective(1200px)_rotateX(40deg)]"
           />
         </div>
         <div

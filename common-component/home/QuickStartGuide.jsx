@@ -3,13 +3,13 @@ import React from "react";
 const QuickStartGuide = () => {
   return (
     <div className="w-full flex justify-center items-center container mx-auto mt-24 md:mt-44">
-      <div className="grid grid-cols-12  w-full xl:w-[70%] gap-10 mx-10 md:mx-0">
+      <div className="grid grid-cols-12  w-full xl:w-[70%] md:gap-10 mx-4 md:mx-0">
         <div className="col-span-12 flex items-center justify-center">
           <p className="text-3xl lg:text-6xl text-center text-sub-text">
             Your Quick Start Guide
           </p>
         </div>
-        <div className="grid grid-cols-12 mt-10 col-span-12 border bg-[#F4ECF7] border-gray-600/10 rounded-2xl p-10 gap-8">
+        <div className="grid grid-cols-12 mt-10 col-span-12 border bg-[#F4ECF7] border-gray-600/10 rounded-2xl p-6 gap-4 md:p-10 md:gap-8">
           {items?.map((item, idx) => {
             return (
               <div
