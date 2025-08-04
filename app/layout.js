@@ -29,7 +29,6 @@ export default function RootLayout({ children }) {
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <ReactLenis root />
 
-          <Header />
           {children}
         </ThemeProvider>
       </body>

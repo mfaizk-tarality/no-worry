@@ -3,7 +3,7 @@ import WrapButton from "@/components/ui/wrap-button";
 
 const Header = () => {
   return (
-    <div className="min-w-full   flex flex-row justify-between items-center px-2 md:px-10 bg-[#fbf1f0]  py-4  z-[9999]">
+    <div className="min-w-full   flex flex-row justify-between items-center px-2 md:px-10   py-4  z-[9999]">
       <div className="text-black flex  dark:hidden">
         <img
           src="/assets/logo.svg"

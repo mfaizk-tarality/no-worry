@@ -9,6 +9,7 @@ import { useTheme } from "next-themes";
 import React, { useEffect, useMemo, useRef } from "react";
 import WrapButton from "@/components/ui/wrap-button";
 import TextType from "@/component/TextType/TextType";
+import Header from "../header";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const HeroSection = () => {
@@ -80,7 +81,6 @@ const HeroSection = () => {
         start: "200px 50%",
         end: "100px 100px",
         scrub: 0.5,
-        markers: true,
       },
       opacity: 1,
       scale: 1,
@@ -88,7 +88,8 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className=" w-full flex justify-center flex-col bg-[linear-gradient(to_bottom,rgba(252,252,252,0),rgba(252,252,252,1)),url('/assets/hero-bg.svg')] bg-no-repeat bg-cover bg-center md:pt-32 mb-24">
+    <div className=" w-full flex justify-center flex-col bg-[linear-gradient(to_bottom,rgba(252,252,252,0),rgba(252,252,252,1)),url('/assets/hero-bg.svg')] bg-no-repeat bg-cover bg-center  mb-24">
+      <Header />
       <div className="h-full w-full flex flex-col justify-center items-center py-20 gap-4">
         <h1 className="text-xl md:text-7xl font-bold w-full md:w-[80%] text-center text-brand">
           India का Smartest Crypto Trading App
@@ -107,7 +108,7 @@ const HeroSection = () => {
         />
       </div>
 
-      <div className="relative w-full z-50">
+      <div className="relative w-full z-50  overflow-x-clip">
         <div
           className="w-full flex items-center justify-start  flex-col gap-4 overflow-hidden  min-h-[80vh]"
           ref={boxRef}
@@ -115,12 +116,7 @@ const HeroSection = () => {
           <img
             src="/assets/hero.avif"
             ref={imageRef}
-            className="transform lg:-translate-y-[20px] xl:-translate-y-[420px] object-contain w-[900px]"
-            style={{
-              transform: `perspective(1200px) rotateX(40deg)`,
-              position: "absolute",
-              zIndex: 200,
-            }}
+            className="-translate-y-[420px] object-contain w-[900px] absolute z-[200] transform-[perspective(1200px)_rotateX(40deg)]"
           />
         </div>
         <div
