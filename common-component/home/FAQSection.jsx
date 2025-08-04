@@ -35,25 +35,27 @@ const faqs = [
 
 const FAQSection = () => {
   return (
-    <div className="w-full flex justify-center items-center container mx-auto mt-24 md:mt-44">
-      <div className="grid grid-cols-12  w-full xl:w-[70%]   gap-5   mx-2 md:mx-0  rounded-2xl overflow-hidden bg-gradient-to-tl from-[#023768] to-[#14161f] inset-shadow-2xs shadow-[#0888ff]">
-        <div className="col-span-12 md:col-span-6 bg-[#1c81fc] p-8 md:p-32">
+    <div className="w-full flex justify-center items-center  mt-24 md:mt-44">
+      <div className="grid grid-cols-12  w-full    gap-5   mx-2 md:mx-0  rounded-2xl overflow-hidden bg-gradient-to-tl from-[#764cbc] to-[#14161f] inset-shadow-2xs shadow-[#0888ff]">
+        <div className="col-span-12 md:col-span-6 bg-[#764cbc] p-8 md:p-32 flex flex-col gap-6">
           <div className="flex items-center justify-center">
             <p className="text-3xl font-semibold">24x7 Customer Support</p>
           </div>
-          <div className="mt-12 md:block flex justify-start items-start flex-col ">
+          <div className="mt-12  flex justify-start items-start flex-col ">
             <p className="font-medium">Email Us</p>
-            <p className="font-semibold text-2xl">support@coinswitch.co</p>
+            <p className="font-semibold text-2xl">support@nowory.com</p>
           </div>
-          <div className="mt-8 md:block flex justify-start items-start flex-col">
-            <p className="font-medium">Raise a ticket</p>
-            <p className="font-semibold text-2xl">Click Here</p>
+          <div className=" flex justify-start items-center flex-row gap-4">
+            <p className="font-bold text-3xl">Or</p>
+            <img
+              src="/assets/cutomer.svg"
+              alt=""
+              className="object-contain h-28"
+            />
           </div>
-          <img
-            src="/assets/cutomer.svg"
-            alt=""
-            className="object-contain h-28 mt-10"
-          />
+          <div className=" flex justify-start items-start flex-col">
+            <p className="font-semibold text-2xl">Raise a ticket in the app</p>
+          </div>
         </div>
         <div className="col-span-12 md:col-span-6 flex items-start justify-start flex-col">
           <div className="flex items-center justify-center w-full my-12">

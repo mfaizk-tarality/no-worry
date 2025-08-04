@@ -14,9 +14,10 @@ import Header from "../header";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const HeroSection = () => {
   const { setTheme } = useTheme();
-  useEffect(() => {
-    setTheme("light");
-  }, []);
+  // const { setTheme } = useTheme();
+  // useEffect(() => {
+  //   setTheme("light");
+  // }, []);
   const imageRef = useRef();
   const boxRef = useRef();
   const { md, lg, sm, xl } = useBreakpoint();
@@ -99,8 +100,8 @@ const HeroSection = () => {
 
         <TextType
           text={[
-            "It’s not a new app. It’s a new experience.",
-            "It’s not a new app. It’s a new experience.",
+            "Trade crypto effortlessly with zero fees and instant withdrawals.",
+            "Trade crypto effortlessly with zero fees and instant withdrawals.",
           ]}
           typingSpeed={75}
           pauseDuration={1500}

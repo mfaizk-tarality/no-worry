@@ -14,7 +14,7 @@ const SignupReferal = () => {
           <img
             src="/assets/signup.png"
             alt=""
-            className="object-contain h-[800px]"
+            className="object-contain h-[600px]"
           />
         </div>
         <CardTwo />
@@ -35,11 +35,11 @@ const CardOne = () => {
           deposit they become your referred user. You earn rewards for every
           successful referral!
         </p>
-        <div className="flex flex-row justify-between">
+        {/* <div className="flex flex-row justify-between">
           <div className="flex flex-row items-center justify-start w-full">
             <AnimatedTooltip items={people} />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

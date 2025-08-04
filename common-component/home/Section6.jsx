@@ -28,7 +28,7 @@ const Section6 = () => {
           <p className="text-3xl md:text-7xl font-semibold text-center">
             See what you'll discover
           </p>
-          <p>Scan the QR to download FinTap today on iOS and Android</p>
+          <p>Scan the QR to download Nowory today on Android device</p>
           <img
             src="/assets/qr.avif"
             alt=""
@@ -50,13 +50,10 @@ const Section6 = () => {
             alt=""
             className="h-10 object-contain"
           />
-          <p className="text-xs text-white/30 mt-2">
-            Comprehensive security of anti-fraud An extensive security system
-            has been implemented for privacy of your money. Fintap is a company
-            specializing in financial technology, not a traditional bank. Its
-            banking services are offered through Piermont Bank, which is an FDIC
-            member. The mobile app screens used in this website is taken from
-            open source behance. the original work
+          <p className="text-sm text-white mt-2">
+            Nowory is a fast, secure, and beginner-friendly crypto platform that
+            lets you buy, sell, and own digital assets instantly - with zero
+            trading fees and no hidden complexity.
           </p>
         </div>
         <div className="col-span-12 md:col-span-6 gap-3 flex items-center justify-center flex-wrap mt-10 md:mt-0">

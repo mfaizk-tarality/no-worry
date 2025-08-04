@@ -22,7 +22,7 @@ const Section5 = () => {
   return (
     <motion.div className="grid grid-cols-12 gap-6" ref={parentRef}>
       <div className="col-span-12 w-full flex justify-center items-center container mx-auto md:mt-24 overflow-hidden h-[500px]">
-        <div className="grid grid-cols-12  w-full xl:w-[70%] gap-5 mx-2 md:mx-0 rounded-3xl h-[500px] bg-gradient-to-tl from-[#023768] to-[#14161f] inset-shadow-2xs shadow-[#0888ff]">
+        <div className="grid grid-cols-12  w-full xl:w-[70%] gap-5 mx-2 md:mx-0 rounded-3xl h-[500px] bg-gradient-to-tl from-[#B444BA] to-[#7944BA] inset-shadow-2xs shadow-[#7944BA]">
           <div className="col-span-12 md:col-span-6 flex items-center px-8">
             <p className="text-2xl md:text-6xl font-medium">
               Made for Mobile. Built for You.
@@ -39,7 +39,7 @@ const Section5 = () => {
       </div>
       <div className="col-span-12 w-full flex justify-center items-center container mx-auto overflow-hidden  md:h-[500px]">
         <div className="grid grid-cols-12 grid-rows-12  w-full xl:w-[70%]  mx-2 md:mx-0  rounded-3xl md:h-[500px]  gap-6">
-          <div className="col-span-12 md:col-span-6 row-span-12 bg-gradient-to-tl from-[#023768] to-[#14161f] rounded-3xl flex justify-center items-center flex-col p-6 gap-8 ">
+          <div className="col-span-12 md:col-span-6 row-span-12 bg-gradient-to-tl from-[#B444BA] to-[#7944BA] rounded-3xl flex justify-center items-center flex-col p-6 gap-8 ">
             <p className="text-2xl font-medium">
               Nowory{" "}
               <span className="text-white/40">
@@ -51,7 +51,7 @@ const Section5 = () => {
 
             <img src="/assets/sec52.svg" alt="" />
           </div>
-          <div className="relative col-span-12 md:col-span-6 row-span-12 md:row-span-8 bg-[#1c81fc] rounded-3xl flex items-center justify-center flex-col gap-6">
+          <div className="relative col-span-12 md:col-span-6 row-span-12 md:row-span-8 bg-[#7a44ba] rounded-3xl flex items-center justify-center flex-col gap-6">
             <img
               src="/assets/safe.png"
               alt=""
@@ -61,13 +61,13 @@ const Section5 = () => {
               Safe Custody
             </p>
 
-            <p className="text-lg md:text-2xl font-medium text-center">
+            <p className="text-lg md:text-xl font-medium text-center">
               Nowory’s custodians are SOC 2 Type II certified and undergo
               regular third-party audits and cybersecurity testing, ensuring the
               highest standards of digital asset protection.
             </p>
           </div>
-          <div className=" col-span-12 md:col-span-6 row-span-12 md:row-span-4 bg-gradient-to-tl from-[#023768] to-[#14161f] rounded-3xl flex items-center justify-center">
+          <div className=" col-span-12 md:col-span-6 row-span-12 md:row-span-4 bg-gradient-to-tl from-[#B444BA] to-[#14161f] rounded-3xl flex items-center justify-center">
             <p className="text-3xl font-medium text-center">
               Own More, Worry Less <br />{" "}
               <span className="text-white/50">That’s Nowory.</span>
