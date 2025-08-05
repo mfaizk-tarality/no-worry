@@ -4,7 +4,7 @@ import React from "react";
 
 const SignupReferal = () => {
   return (
-    <div className="w-full flex flex-col gap-8 md:gap-20 justify-center items-center container mx-auto mt-24 md:mt-44">
+    <div className="w-full flex flex-col gap-8 md:gap-20 justify-center items-center container mx-auto md:mt-44">
       <div className="flex flex-col gap-4 items-center justify-center">
         <p className="text-3xl lg:text-6xl text-center text-sub-text">
           Inviting friends comes <br /> with rewards.

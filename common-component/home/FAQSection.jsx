@@ -66,7 +66,7 @@ const FAQSection = () => {
               return (
                 <Disclosure as="div" className="p-6" key={idx}>
                   <DisclosureButton className="group flex w-full items-center justify-between">
-                    <span className="text-sm/6 font-medium text-white group-data-hover:text-white/80">
+                    <span className="text-sm/6 font-medium text-white group-data-hover:text-white/80 text-left">
                       {item?.question}
                     </span>
                     <ChevronDownIcon className="size-5 fill-white/60 group-data-hover:fill-white/50 group-data-open:rotate-180" />
