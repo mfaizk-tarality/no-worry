@@ -3,11 +3,23 @@ import React from "react";
 
 const NoworySection = () => {
   return (
-    <div className="w-full mb-22">
-      <p className="text-3xl lg:text-6xl text-center text-sub-text">
-        Inviting friends comes <br /> with rewards.
-      </p>
-      <div className="w-full grid grid-cols-12 gap-10 mt-22">
+    <div className="w-full  mt-24 md:mt-44">
+      <div className="flex flex-col items-center justify-center gap-4">
+        <p className="text-lg text-center text-customPurple">
+          The Most Rewarding Crypto App
+        </p>
+        <p className="text-xl lg:text-4xl font-semibold">
+          Trade. Earn. Repeat. Only on Nowory.
+        </p>
+        <p className="text-sub-text w-full md:w-[50%] text-center">
+          At Nowory, every action counts. From signing up to trading — earn
+          Nowory Points for every activity like account creation, KYC, deposit,
+          withdrawal, and buy/sell. Use your points to unlock exclusive rewards,
+          get access to premium features, and let you participate in point-based
+          activities in the app.
+        </p>
+      </div>
+      <div className="w-full grid grid-cols-12 gap-10 md:mt-16">
         <div className="col-span-12 md:col-span-3 flex justify-around item-start md:items-end  flex-col relative">
           <div className="w-full xl:w-[50%] h-full flex flex-col item-start md:items-end  md:text-right justify-center gap-10 xl:gap-20 2xl:gap-32 relative mt-22 md:mt-32 ">
             {leftItems?.map((item, idx) => {

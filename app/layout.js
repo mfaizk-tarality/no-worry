@@ -4,6 +4,7 @@ import Header from "@/common-component/header";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import { ReactLenis } from "lenis/react";
 import Section6 from "@/common-component/home/Section6";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,6 +44,7 @@ export default function RootLayout({ children }) {
           <Section6 />
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId="G-XYZ" />
     </html>
   );
 }
