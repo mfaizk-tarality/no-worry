@@ -18,19 +18,21 @@ const PriceMarquee = () => {
     socketInstance.on("cmc_updated", (val) => {
       setTradeData(val);
     });
-  }, [socketInstance]);
+  }, []);
 
   const coinList = useMemo(() => {
-    return tradeData?.map((item) => {
-      return {
-        price: item?.usdt_markup_price || 0,
-        direction: item?.direction || "",
-        name: item?.name || "",
-        icon: item?.icon || "",
-        decimal: item?.decimal_places_in_usdt || 2,
-        percentage: item?.price_change_percentage_1h || 0,
-      };
-    });
+    return tradeData
+      ?.filter((item) => item?.symbol != "USDT")
+      ?.map((item) => {
+        return {
+          price: item?.usdt_markup_price || 0,
+          direction: item?.direction || "",
+          name: item?.name || "",
+          icon: item?.icon || "",
+          decimal: item?.decimal_places_in_usdt || 2,
+          percentage: item?.price_change_percentage_1h || 0,
+        };
+      });
   }, [tradeData]);
 
   return (
