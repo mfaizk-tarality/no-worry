@@ -19,7 +19,7 @@ const NoworySection = () => {
           activities in the app.
         </p>
       </div>
-      <div className="w-full grid grid-cols-12 gap-10 md:mt-16">
+      <div className="w-full grid grid-cols-12 gap-6 md:gap-10 md:mt-16">
         <div className="col-span-12 md:col-span-3 flex justify-around item-start md:items-end  flex-col relative">
           <div className="w-full xl:w-[50%] h-full flex flex-col item-start md:items-end  md:text-right justify-center gap-10 xl:gap-20 2xl:gap-32 relative mt-22 md:mt-32 ">
             {leftItems?.map((item, idx) => {
