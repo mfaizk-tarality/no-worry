@@ -5,11 +5,8 @@ const NoworySection = () => {
   return (
     <div className="w-full  mt-24 md:mt-44">
       <div className="flex flex-col items-center justify-center gap-4">
-        <p className="text-lg text-center text-customPurple">
+        <p className="text-3xl lg:text-6xl text-center text-sub-text">
           The Most Rewarding Crypto App
-        </p>
-        <p className="text-xl lg:text-4xl font-semibold">
-          Trade. Earn. Repeat. Only on Nowory.
         </p>
         <p className="text-sub-text w-full md:w-[50%] text-center">
           At Nowory, every action counts. From signing up to trading — earn

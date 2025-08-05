@@ -25,7 +25,7 @@ export default Section3;
 
 const items = [
   {
-    title: "Built for All Levels",
+    title: "Built for All",
     description: "Whether you’re new or pro, the app fits your crypto journey.",
     img: "/assets/section3/1.svg",
   },

@@ -8,7 +8,7 @@ const Section2 = () => {
         <p className="text-2xl md:text-5xl font-semibold text-sub-text">
           Finally, An app that doesn't hold your crypto hostage.
         </p>
-        <p className="text-sm md:text-xl ">
+        <p className="text-sub-text ">
           Withdraw anytime. To anywhere. No questions asked. No excuses
         </p>
       </div>

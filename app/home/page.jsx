@@ -26,8 +26,8 @@ const HomePage = () => {
         <PriceMarquee />
         <Section2 />
         <QuickStartGuide />
-        <Section3 />
         <NoworySection />
+        <Section3 />
         <SignupReferal />
       </div>
       <Section4 />
