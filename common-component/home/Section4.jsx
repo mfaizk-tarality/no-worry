@@ -254,11 +254,10 @@ const Section4 = () => {
             </p>
             <p className="text-xs text-center text-gray-300 mt-4 md:mt-8 ">
               What’s yours stays yours — safe, intact, and always accessible.
-              <br />
-              <p className="text-white mt-4 md:mt-8 ">
-                From login to trade, every step is shielded with layered
-                security and proactive fraud detection.
-              </p>
+            </p>
+            <p className="text-white mt-4 md:mt-8 ">
+              From login to trade, every step is shielded with layered security
+              and proactive fraud detection.
             </p>
           </div>
         </motion.div>

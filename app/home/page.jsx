@@ -14,6 +14,7 @@ import SignupReferal from "@/common-component/home/SignupReferal";
 import FAQSection from "@/common-component/home/FAQSection";
 import PriceMarquee from "@/common-component/home/PriceMarquee";
 import { useTheme } from "next-themes";
+import NoworySection from "@/common-component/home/NoworySection";
 const HomePage = () => {
   return (
     <div>
@@ -26,6 +27,7 @@ const HomePage = () => {
         <Section2 />
         <QuickStartGuide />
         <Section3 />
+        <NoworySection />
         <SignupReferal />
       </div>
       <Section4 />
