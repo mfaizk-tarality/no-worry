@@ -4,9 +4,13 @@ const QuickStartGuide = () => {
   return (
     <div className="w-full flex justify-center items-center container mx-auto mt-24 md:mt-44">
       <div className="grid grid-cols-12  w-full xl:w-[70%] md:gap-10 mx-4 md:mx-0">
-        <div className="col-span-12 flex items-center justify-center">
+        <div className="col-span-12 flex flex-col items-center justify-center gap-4">
           <p className="text-3xl lg:text-6xl text-center text-sub-text">
             Your Quick Start Guide
+          </p>
+          <p className="text-sub-text">
+            From sign‑up to trading in minutes — here’s how to get started with
+            Nowory.
           </p>
         </div>
         <div className="grid grid-cols-12 mt-10 col-span-12 border bg-[#F4ECF7] border-gray-600/10 rounded-2xl p-6 gap-4 md:p-10 md:gap-8">

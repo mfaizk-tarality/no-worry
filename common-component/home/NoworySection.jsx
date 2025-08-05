@@ -11,9 +11,7 @@ const NoworySection = () => {
         <p className="text-sub-text w-full md:w-[50%] text-center">
           At Nowory, every action counts. From signing up to trading — earn
           Nowory Points for every activity like account creation, KYC, deposit,
-          withdrawal, and buy/sell. Use your points to unlock exclusive rewards,
-          get access to premium features, and let you participate in point-based
-          activities in the app.
+          withdrawal, and buy/sell.
         </p>
       </div>
       <div className="w-full grid grid-cols-12 gap-6 md:gap-10 md:mt-16">
@@ -94,33 +92,36 @@ export default NoworySection;
 
 const rightItems = [
   {
-    label: "Spending Habits",
-    subLabel: "Analyze your spending patterns and receive tips to cut",
-  },
-  {
-    label: "Real-Time Alerts",
+    label: "Earn Points on Every Action",
     subLabel:
-      "Get instant notifications on transactions, low balances and bill",
+      "From sign‑up to your very first trade, every move you make adds to your reward balance.",
   },
   {
-    label: "Financial Confidence",
-    subLabel: "Make informed financial decisions with detailed analytics",
+    label: "Activity-Based Rewards",
+    subLabel:
+      "Get rewarded for deposits, withdrawals, KYC completion, and more.",
+  },
+  {
+    label: "Use Rewards In‑App",
+    subLabel:
+      "Redeem your points for trading benefits, fee discounts, or exclusive features.",
   },
 ];
 
 const leftItems = [
   {
-    label: "Spending Habits",
-    subLabel: "Analyze your spending patterns and receive tips to cut",
-  },
-  {
-    label: "Real-Time Alerts",
+    label: "No Expiry Hassles",
     subLabel:
-      "Get instant notifications on transactions, low balances and bill",
+      "Your reward points stay valid as long as your account is active.",
   },
   {
-    label: "Financial Confidence",
-    subLabel: "Make informed financial decisions with detailed analytics",
+    label: "Referral Bonuses",
+    subLabel: "Invite friends and multiply your earnings together.",
+  },
+  {
+    label: "Daily Opportunities",
+    subLabel:
+      "Engage with Nowory every day to unlock fresh reward points and offers.",
   },
 ];
 

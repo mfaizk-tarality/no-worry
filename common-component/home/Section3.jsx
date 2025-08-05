@@ -12,6 +12,9 @@ const Section3 = () => {
             Everything You Need.
             <br /> Nothing You Don’t.
           </p>
+          <p className="text-sub-text">
+            Simple. Powerful. Exactly what you need to win.
+          </p>
         </div>
         <div className="col-span-12  md:mt-16 gap-6">
           <HoverEffect items={items} />

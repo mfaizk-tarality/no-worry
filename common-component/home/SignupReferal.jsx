@@ -5,9 +5,14 @@ import React from "react";
 const SignupReferal = () => {
   return (
     <div className="w-full flex flex-col gap-8 md:gap-20 justify-center items-center container mx-auto mt-24 md:mt-44">
-      <p className="text-3xl lg:text-6xl text-center text-sub-text">
-        Inviting friends comes <br /> with rewards.
-      </p>
+      <div className="flex flex-col gap-4 items-center justify-center">
+        <p className="text-3xl lg:text-6xl text-center text-sub-text">
+          Inviting friends comes <br /> with rewards.
+        </p>
+        <p className="text-sub-text">
+          Because good things are better when shared.
+        </p>
+      </div>
       <div className="grid grid-cols-12  w-full xl:w-[70%]   gap-5   mx-10 md:mx-0 ">
         <CardOne />
         <div className="col-span-12 md:col-span-4 flex items-center justify-center">
