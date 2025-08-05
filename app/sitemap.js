@@ -1,4 +1,4 @@
-const base_url = "https://nowory.com";
+export const base_url = "https://nowory.com";
 
 export default function sitemap() {
   return [
