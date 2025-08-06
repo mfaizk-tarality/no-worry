@@ -31,7 +31,7 @@ const Header = ({ type }) => {
         </Link>
       </div>
       <div className="flex flex-row gap-4">
-        <WrapButton className="" href="/docs/components/card-carousel">
+        <WrapButton className="" href="#">
           <img
             src="/assets/playstore.svg"
             alt=""
