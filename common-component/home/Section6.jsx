@@ -28,7 +28,7 @@ const Section6 = () => {
 
   return (
     <div className="overflow-hidden">
-      <div className="w-full flex justify-center 2xl:justify-between mt-24 md:mt-44">
+      <div className="w-full flex justify-center 2xl:justify-between mt-24 md:mt-44 ">
         <img
           src="/assets/left-footer.svg"
           alt=""
@@ -40,7 +40,7 @@ const Section6 = () => {
           </p>
           <p>Scan the QR to download Nowory today on Android device</p>
           <img
-            src="/assets/qr.avif"
+            src="/assets/qr.svg"
             alt=""
             className="object-contain h-56 w-full md:h-72"
           />
@@ -51,7 +51,7 @@ const Section6 = () => {
           className="hidden lg:flex h-[500px] 2xl:h-[600px]"
         />
       </div>
-      <div className="mx-6 grid grid-cols-12 mt-10 md:mt-0">
+      <div className="mx-6 grid grid-cols-12 mt-10 ">
         <div className="col-span-12 md:col-span-3">
           <img
             src={

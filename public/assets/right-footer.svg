@@ -1,4 +1,5 @@
-<svg width="524" height="568" viewBox="0 0 524 568" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="496" height="568" viewBox="0 0 496 568" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1599_24285)">
 <rect y="504" width="64" height="64" rx="16" fill="#121212"/>
 <rect x="72" y="432" width="64" height="64" rx="16" fill="#121212"/>
 <rect x="72" y="504" width="64" height="64" rx="16" fill="#121212"/>
@@ -36,6 +37,7 @@
 <rect x="432" y="360" width="64" height="64" rx="16" fill="#121212"/>
 <rect x="432" y="432" width="64" height="64" rx="16" fill="#121212"/>
 <rect x="432" y="504" width="64" height="64" rx="16" fill="#121212"/>
+</g>
 <defs>
 <filter id="filter0_dddd_1599_24285" x="188" y="280" width="264" height="264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
@@ -93,5 +95,8 @@
 <feBlend mode="normal" in2="effect3_dropShadow_1599_24285" result="effect4_dropShadow_1599_24285"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect4_dropShadow_1599_24285" result="shape"/>
 </filter>
+<clipPath id="clip0_1599_24285">
+<rect width="496" height="568" fill="white"/>
+</clipPath>
 </defs>
 </svg>

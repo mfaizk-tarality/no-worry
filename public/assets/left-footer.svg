@@ -1,43 +1,45 @@
-<svg width="524" height="616" viewBox="0 0 524 616" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="28" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="28" y="72" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="28" y="144" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="28" y="216" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="28" y="288" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="28" y="360" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="28" y="432" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="28" y="504" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="100" y="72" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="100" y="144" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="100" y="216" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="100" y="288" width="64" height="64" rx="16" fill="#121212"/>
+<svg width="496" height="568" viewBox="0 0 496 568" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1599_24247)">
+<rect width="64" height="64" rx="16" fill="#121212"/>
+<rect y="72" width="64" height="64" rx="16" fill="#121212"/>
+<rect y="144" width="64" height="64" rx="16" fill="#121212"/>
+<rect y="216" width="64" height="64" rx="16" fill="#121212"/>
+<rect y="288" width="64" height="64" rx="16" fill="#121212"/>
+<rect y="360" width="64" height="64" rx="16" fill="#121212"/>
+<rect y="432" width="64" height="64" rx="16" fill="#121212"/>
+<rect y="504" width="64" height="64" rx="16" fill="#121212"/>
+<rect x="72" y="72" width="64" height="64" rx="16" fill="#121212"/>
+<rect x="72" y="144" width="64" height="64" rx="16" fill="#121212"/>
+<rect x="72" y="216" width="64" height="64" rx="16" fill="#121212"/>
+<rect x="72" y="288" width="64" height="64" rx="16" fill="#121212"/>
 <g filter="url(#filter0_dddd_1599_24247)">
-<rect x="100" y="360" width="64" height="64" rx="16" fill="#D915F6"/>
+<rect x="72" y="360" width="64" height="64" rx="16" fill="#D915F6"/>
 </g>
-<rect x="100" y="432" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="100" y="504" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="172" y="144" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="172" y="216" width="64" height="64" rx="16" fill="#121212"/>
+<rect x="72" y="432" width="64" height="64" rx="16" fill="#121212"/>
+<rect x="72" y="504" width="64" height="64" rx="16" fill="#121212"/>
+<rect x="144" y="144" width="64" height="64" rx="16" fill="#121212"/>
+<rect x="144" y="216" width="64" height="64" rx="16" fill="#121212"/>
 <g filter="url(#filter1_dddd_1599_24247)">
-<rect x="172" y="288" width="64" height="64" rx="16" fill="#FF8A65"/>
+<rect x="144" y="288" width="64" height="64" rx="16" fill="#FF8A65"/>
 </g>
-<rect x="172" y="360" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="172" y="432" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="172" y="504" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="244" y="288" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="244" y="360" width="64" height="64" rx="16" fill="#121212"/>
+<rect x="144" y="360" width="64" height="64" rx="16" fill="#121212"/>
+<rect x="144" y="432" width="64" height="64" rx="16" fill="#121212"/>
+<rect x="144" y="504" width="64" height="64" rx="16" fill="#121212"/>
+<rect x="216" y="288" width="64" height="64" rx="16" fill="#121212"/>
+<rect x="216" y="360" width="64" height="64" rx="16" fill="#121212"/>
 <g filter="url(#filter2_dddd_1599_24247)">
-<rect x="244" y="432" width="64" height="64" rx="16" fill="#004FFF"/>
+<rect x="216" y="432" width="64" height="64" rx="16" fill="#004FFF"/>
 </g>
-<rect x="244" y="504" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="316" y="360" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="316" y="432" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="316" y="504" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="388" y="432" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="388" y="504" width="64" height="64" rx="16" fill="#121212"/>
-<rect x="460" y="504" width="64" height="64" rx="16" fill="#121212"/>
+<rect x="216" y="504" width="64" height="64" rx="16" fill="#121212"/>
+<rect x="288" y="360" width="64" height="64" rx="16" fill="#121212"/>
+<rect x="288" y="432" width="64" height="64" rx="16" fill="#121212"/>
+<rect x="288" y="504" width="64" height="64" rx="16" fill="#121212"/>
+<rect x="360" y="432" width="64" height="64" rx="16" fill="#121212"/>
+<rect x="360" y="504" width="64" height="64" rx="16" fill="#121212"/>
+<rect x="432" y="504" width="64" height="64" rx="16" fill="#121212"/>
+</g>
 <defs>
-<filter id="filter0_dddd_1599_24247" x="0" y="280" width="264" height="264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_dddd_1599_24247" x="-28" y="280" width="264" height="264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="20"/>
@@ -65,7 +67,7 @@
 <feBlend mode="normal" in2="effect3_dropShadow_1599_24247" result="effect4_dropShadow_1599_24247"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect4_dropShadow_1599_24247" result="shape"/>
 </filter>
-<filter id="filter1_dddd_1599_24247" x="72" y="208" width="264" height="264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter1_dddd_1599_24247" x="44" y="208" width="264" height="264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="20"/>
@@ -93,7 +95,7 @@
 <feBlend mode="normal" in2="effect3_dropShadow_1599_24247" result="effect4_dropShadow_1599_24247"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect4_dropShadow_1599_24247" result="shape"/>
 </filter>
-<filter id="filter2_dddd_1599_24247" x="144" y="352" width="264" height="264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter2_dddd_1599_24247" x="116" y="352" width="264" height="264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="20"/>
@@ -121,5 +123,8 @@
 <feBlend mode="normal" in2="effect3_dropShadow_1599_24247" result="effect4_dropShadow_1599_24247"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect4_dropShadow_1599_24247" result="shape"/>
 </filter>
+<clipPath id="clip0_1599_24247">
+<rect width="496" height="568" fill="white"/>
+</clipPath>
 </defs>
 </svg>

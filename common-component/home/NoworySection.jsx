@@ -127,6 +127,6 @@ const leftItems = [
 
 const SmallCircle = () => {
   return (
-    <div className="h-[20px] w-[20px] border border-sub-text/20 rounded-full hidden lg:flex"></div>
+    <div className="h-[20px] w-[20px] border border-brand rounded-full hidden lg:flex "></div>
   );
 };
