@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Header = ({ type }) => {
   const pathname = usePathname();
-  if (type == "layout" && pathname == "/home") {
+  if (type == "layout" && pathname?.includes("/home")) {
     return <></>;
   }
   return (
