@@ -146,23 +146,23 @@ const RightBox = () => {
   return (
     <div className="lg:w-[70%] flex flex-col text-center gap-2 items-center justify-center mt-20 sm:mt-0 opacity-100 ">
       <p className="text-2xl md:text-4xl text-sub-text font-semibold">
-        Launch Bonus: Get ₹250 worth of Bitcoin FREE,
+        This 79th Independence Day, Win a Share of ₹79 Lakh Worth of Bitcoin!
       </p>
 
       <div className="flex items-center justify-center mt-4 gap-4 flex-col md:flex-row">
-        <div className="flex ring ring-gray-500/60  active:ring-customPurple active:bg-customPurple  active:text-white  hover:ring-customPurple hover:bg-customPurple hover:text-white w-64 justify-center p-2 px-4 rounded-4xl items-center transition-all delay-100 duration-100 ease-linear ">
-          <p>Limited to first 29,999 users</p>
-        </div>
-        <div className="flex ring ring-gray-500/60 active:ring-customPurple active:bg-customPurple  hover:ring-customPurple hover:bg-customPurple hover:text-white w-64 justify-center p-2 px-4 rounded-4xl items-center transition-all delay-100 duration-100 ease-linear ">
-          <p>27,152 spots remaining</p>
-        </div>
+        Get early access- Independence Day BTC giveaway starts August 14th!
+        {/* Only
+        for waitlist members. */}
       </div>
-      <div className="w-full flex items-center justify-center">
+      <div className="mt-6 bg-brand text-white px-4 py-2 rounded-3xl ">
+        Limited spots!
+      </div>
+      {/* <div className="w-full flex items-center justify-center">
         <WrapButton className="mt-10" href="/docs/components/card-carousel">
           <ExternalLink />
-          Get Notified
+          Join Waitlist
         </WrapButton>
-      </div>
+      </div> */}
     </div>
   );
 };
