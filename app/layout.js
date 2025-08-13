@@ -73,7 +73,7 @@ export const metadata = {
   },
 
   authors: [{ name: "Nowory Team", url: `${base_url}` }],
-  creator: "FoxChain Development",
+  creator: "NoWory Development",
 
   robots: {
     index: true,
@@ -100,6 +100,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <GoogleAnalytics gaId="G-9JBD7QCT91" />
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -107,10 +109,9 @@ export default function RootLayout({ children }) {
           <ReactLenis root />
           <Header type={"layout"} />
           {children}
-          <Section6 />
+          {/* <Section6 /> */}
         </ThemeProvider>
       </body>
-      <GoogleAnalytics gaId="G-XYZ" />
     </html>
   );
 }

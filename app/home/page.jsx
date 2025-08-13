@@ -18,7 +18,8 @@ import NoworySection from "@/common-component/home/NoworySection";
 const HomePage = () => {
   return (
     <div>
-      <div className="bg-[linear-gradient(to_bottom,rgba(252,252,252,0.5),rgba(252,252,252)),url('/assets/hero-bg.svg')] bg-no-repeat bg-cover bg-center">
+      {/* <div className="bg-[linear-gradient(to_bottom,rgba(252,252,252,0.5),rgba(252,252,252)),url('/assets/hero-bg.svg')] bg-no-repeat bg-cover bg-center"> */}
+      <div className="">
         {/* <div className=""> */}
         <HeroSection />
         {/* <Section1 /> */}
@@ -33,6 +34,7 @@ const HomePage = () => {
       <Section4 />
       <Section5 />
       <FAQSection />
+      <Section6 />
     </div>
   );
 };

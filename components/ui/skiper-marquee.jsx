@@ -28,7 +28,7 @@ function Marquee({
     >
       {Array(repeat)
         .fill(0)
-        .map((_, i) => (
+        ?.map((_, i) => (
           <div
             key={i}
             className={cn("flex shrink-0 justify-around [gap:var(--gap)]", {

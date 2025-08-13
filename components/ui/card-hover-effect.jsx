@@ -13,7 +13,7 @@ export const HoverEffect = ({ items, className }) => {
         className
       )}
     >
-      {items.map((item, idx) => (
+      {items?.map((item, idx) => (
         <a
           href={item?.link}
           key={idx}

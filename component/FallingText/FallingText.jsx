@@ -40,7 +40,7 @@ const FallingText = ({
     const words = text.split(" ");
 
     const newHTML = words
-      .map((word) => {
+      ?.map((word) => {
         const isHighlighted = highlightWords.some((hw) => word.startsWith(hw));
         return `<span
           class="inline-block mx-[2px] select-none ${
